@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1"
+    />
+    <link rel="stylesheet" href="../../css/app/new/style.css" />
+  </head>
+  <body class="page-service">
+    <header class="gnb-sub white">
+      <a href="#" class="btn-back"></a>
+      <div class="header-menu">
+        <a href="#" class="btn btn-lock"></a>
+        <a href="#" class="btn btn-hamburger"></a>
+      </div>
+      <div class="side-menu">
+        <div class="side-menu-header">
+          <img src="../../images/new/logo.png" class="logo" alt="진도" />
+          <img
+            src="../../images/new/side-menu-logo-text.png"
+            class="logo-text"
+            alt="보배섬 소식통"
+          />
+          <a href="#" class="close btn-close"
+            ><i class="icon icon-close"></i
+          ></a>
+        </div>
+        <div class="relative">
+          <ul class="first">
+            <li>
+              <a href="#" class="active">소통 플랫폼 소개</a>
+            </li>
+            <li>
+              <a href="#" class="">정보 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">신청 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">예약 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">편의 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">밀착 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">알림마당</a>
+            </li>
+          </ul>
+          <ul class="second">
+            <li class="separator">
+              <a href="#"
+                ><span>소통 플랫폼 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>정보 서비스 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">사업정보</a>
+              <ul class="third">
+                <li>
+                  <a href="#"
+                    ><span>마감임박 사업정보</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>사업정보 확인</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>사업정보</span> <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>공연/행사정보</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>취업정보</span> <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li class="separator">
+              <a href="#"
+                ><span>맞춤형 정보</span> <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>신청 서비스 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><span>지원사업</span></a>
+              <ul class="third">
+                <li>
+                  <a href="#"
+                    ><span>신청중인 사업</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>보조사업 정보</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>맞춤 보조사업 찾기</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="content map">
+      <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+          <p>
+            지도를 손가락으로 꾹 누르시면<br />
+            새로운 포인트를 생성할 수 있습니다.
+          </p>
+        </div>
+      </div>
+      <button id="open-bottom-sheet">
+        <div class="radio-cont">
+          <ul>
+            <li>
+              <div>출장</div>
+              <div class="date"><span>2024-09-05</span></div>
+              <div>피해조사</div>
+              <div class="toggle-wrap">
+                <input type="checkbox" id="toggle" class="toggle-button" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </button>
+      <div id="dim-overlay"></div>
+      <!-- 24.09.19 김래경 map-address 위치 변경 -->
+      <!-- #bottom-sheet 밖으로 빠져야 바텀시트가 감춰졌을 때 주소 노출 가능 -->
+      <div class="map-address">
+        <span>전남 진도군 의신면 거룡리 520-7 마을회관</span>
+      </div>
+      <!-- //24.09.19 김래경 map-address 위치 변경 -->
+
+      <!-- 24.09.19 김래경 지도 내 포인트 아이콘 -->
+      <p class="map-pointer" style="left: 50%; top: 50%">
+        <em>1</em>
+      </p>
+      <p class="map-pointer" style="left: 30%; top: 70%">
+        <em>2</em>
+      </p>
+      <!-- //24.09.19 김래경 지도 내 포인트 아이콘 -->
+
+      <!-- 24.09.19 김래경 플로팅 버튼 -->
+      <div class="float-wrap">
+        <button type="button" class="btn-float memo"><span>메모</span></button>
+        <button type="button" class="btn-float picture">
+          <span>현장사진</span>
+        </button>
+      </div>
+      <!-- //24.09.19 김래경 플로팅 버튼 -->
+
+      <!-- 24.09.19 김래경 추가 영역 -->
+      <div class="map-util">
+        <button type="button" class="point-spread">포인트 펼쳐보기</button>
+        <ul class="point-list">
+          <li>
+            <!-- 등록된 포인트가 없을 경우 -->
+            <p>등록된 포인트가 없습니다.</p>
+          </li>
+          <li>
+            <em>1</em>
+            <span>2024.09.10</span>
+            <p>건물 외곽 오른쪽 토사 쌓임</p>
+            <button type="button" class="btn-del-sm"></button>
+          </li>
+          <li>
+            <em>2</em>
+            <span>2024.09.10</span>
+            <p>
+              포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트
+            </p>
+            <button type="button" class="btn-del-sm"></button>
+          </li>
+        </ul>
+        <!-- //24.09.19 김래경 추가 영역 -->
+      </div>
+      <div id="bottom-sheet">
+        <!-- <div class="map-address">
+          <span>전남 진도군 의신면 거룡리 520-7 마을회관</span>
+        </div> -->
+        <div class="map-bottom-area">
+          <div class="sheet-content">
+            <button id="close-bottom-sheet">Close</button>
+          </div>
+          <div class="map-bottom-area-inner">
+            <!--data 없을경우
+            <div class="nodata">새로운 이벤트를 생성해주세요.</div>-->
+            <div class="cont-tit">아래 이벤트 중 하나를 선택해주세요</div>
+            <div class="radio-wrap">
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  id="option1"
+                  name="option"
+                  value="option1"
+                  checked
+                />
+                <label for="option1">전체(5)</label>
+              </div>
+
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  id="option2"
+                  name="option"
+                  value="option2"
+                />
+                <label for="option2">출장(3)</label>
+              </div>
+
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  id="option3"
+                  name="option"
+                  value="option3"
+                />
+                <label for="option3">민원(2)</label>
+              </div>
+            </div>
+            <div class="radio-cont">
+              <ul>
+                <li>
+                  <div>출장</div>
+                  <div class="date"><span>2024-09-05</span></div>
+                  <div>피해조사</div>
+                  <div class="toggle-wrap">
+                    <input type="checkbox" id="toggle" class="toggle-button" />
+                  </div>
+                </li>
+                <li>
+                  <div>민원</div>
+                  <div class="date"><span>2024-09-05</span></div>
+                  <div>피해조사</div>
+                  <div class="toggle-wrap">
+                    <input type="checkbox" id="toggle" class="toggle-button" />
+                  </div>
+                </li>
+                <li>
+                  <div>출장</div>
+                  <div class="date"><span>2024-09-05</span></div>
+                  <div>피해조사</div>
+                  <div class="toggle-wrap">
+                    <div id="tost_message">
+                      처리상태가 “완료”로 변경되었습니다.
+                    </div>
+                    <!-- <button id="tost_btn" type="button"></button> -->
+                    <input type="checkbox" id="toggle" class="toggle-button" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="add_event_btn_wrap">
+            <button type="button" class="add_event_btn">
+              새로운 이벤트 생성
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/new/jquery-3.7.1.min.js"></script>
+    <script src="../../js/new/script.js"></script>
+    <script>
+      const toggle = document.getElementById("toggle");
+      toggle.addEventListener("change", function () {
+        if (this.checked) {
+          console.log("The switch is ON");
+        } else {
+          console.log("The switch is OFF");
+        }
+      });
+      //1. 토스트 메시지, 버튼요소를 변수에 대입
+      let tostMessage = document.getElementById("tost_message");
+      //   let tostBtn = document.getElementById("tost_btn");
+
+      //2. 토스트 메시지 노출-사라짐 함수 작성
+      function tostOn() {
+        tostMessage.classList.add("active");
+        setTimeout(function () {
+          tostMessage.classList.remove("active");
+        }, 5000);
+      }
+
+      //3. 토스트 버튼에 이벤트 연결
+      toggle.addEventListener("click", function () {
+        console.log("이벤트가 잘 연결 됐는지 확인");
+        tostOn();
+      });
+
+      $(document).ready(function () {
+        // 페이지 로드 시 바로 bottom sheet와 dim overlay 활성화
+        $("#bottom-sheet").css("bottom", "0");
+        $("#dim-overlay").css({
+          opacity: "1",
+          visibility: "visible",
+        });
+
+        // Close the bottom sheet function
+        function closeBottomSheet() {
+          $("#bottom-sheet").css("bottom", "-100%");
+          $("#dim-overlay").css({
+            opacity: "0",
+            visibility: "hidden",
+          });
+        }
+        $("#open-bottom-sheet").click(function () {
+          $("#bottom-sheet").css("bottom", "0");
+          $("#dim-overlay").css({
+            opacity: "1",
+            visibility: "visible",
+          });
+        });
+
+        // Bottom sheet 닫기 함수
+        function closeBottomSheet() {
+          $("#bottom-sheet").css("bottom", "-100%");
+          $("#dim-overlay").css({
+            opacity: "0",
+            visibility: "hidden",
+          });
+        }
+
+        // 닫기 버튼으로 닫기
+        $("#close-bottom-sheet").click(function () {
+          closeBottomSheet();
+        });
+
+        // dim 영역을 클릭하여 닫기
+        $("#dim-overlay").click(function () {
+          closeBottomSheet();
+        });
+        // 포인트 펼쳐보기 추가
+        $(".point-spread").click(function () {
+          if ($(".point-spread").hasClass("open") === true) {
+            $(".point-spread").removeClass("open");
+          } else {
+            $(".point-spread").addClass("open");
+          }
+        });
+      });
+      $(document).ready(function () {
+        let startY = 0;
+        let currentY = 0;
+        let isDragging = false;
+
+        // Open the bottom sheet
+        $("#open-bottom-sheet").click(function () {
+          $("#bottom-sheet").css("bottom", "0");
+        });
+
+        // Close the bottom sheet
+        $("#close-bottom-sheet").click(function () {
+          $("#bottom-sheet").css("bottom", "-100%");
+        });
+        $("#close-bottom-sheet").click(function () {
+          $("#bottom-sheet").css("bottom", "-100%");
+        });
+
+        // Touch start event
+        $("#bottom-sheet").on("touchstart", function (e) {
+          startY = e.originalEvent.touches[0].clientY;
+          isDragging = true;
+        });
+
+        // Touch move event
+        $("#bottom-sheet").on("touchmove", function (e) {
+          if (!isDragging) return;
+
+          currentY = e.originalEvent.touches[0].clientY;
+          let diffY = currentY - startY;
+
+          // Only move the sheet downwards
+          if (diffY > 0) {
+            $(this).css("bottom", `-${diffY}px`);
+          }
+        });
+
+        // Touch end event
+        $("#bottom-sheet").on("touchend", function (e) {
+          isDragging = false;
+
+          let diffY = currentY - startY;
+
+          // If dragged more than 100px down, close the bottom sheet
+          if (diffY > 100) {
+            $("#bottom-sheet").css("bottom", "-100%");
+          } else {
+            // If not enough drag, reset to initial position
+            $("#bottom-sheet").css("bottom", "0");
+          }
+        });
+      });
+      window.onload = function () {
+        // 팝업을 처음부터 띄우기
+        const popup = document.getElementById("popup");
+
+        // 2초 후에 팝업 사라지게 하기
+        setTimeout(function () {
+          popup.classList.add("hidden");
+        }, 2000); // 2000ms = 2초
+      };
+    </script>
+  </body>
+</html>

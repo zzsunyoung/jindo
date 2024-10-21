@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1" />
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+  </head>
+  <body class="page-service">
+    <!-- 참고 코드, 팝업창 열기 -->
+    <ul style="margin: 0 auto; width: 80%">
+      <li><a href="#" class="open-popup" data-target=".popup-style-8">메모+사진첨부</a></li>
+    </ul>
+
+    <div class="popup-style popup-style-8">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="search-box">
+            <div class="search-input-container">
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+          <div class="file-upload">
+            <label for="file-input" class="file-label">파일 선택</label>
+            <input type="file" id="file-input" class="file-input" />
+            <span class="file-name">선택된 파일 없음</span>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">현장사진 등록</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+  </body>
+</html>

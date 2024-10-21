@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1"
+    />
+    <!-- 추가 시작 2024.09.19. 20:45 -->
+    <link rel="stylesheet" href="../css/app/new/tiny-slider.css" />
+    <!-- 추가 종료 2024.09.19. 20:45 -->
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+  </head>
+  <body class="page-main">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#"><img src="../images/new/logo.png" alt="진도" /></a>
+        </div>
+        <div class="main-toggle">
+          <a href="#" class="active">군민</a><a href="#">행정</a>
+        </div>
+        <div class="menu">
+          <ul class="gnb">
+            <li>
+              <a href="#"><i class="icon icon-find"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon icon-cart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon icon-person"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btn-hamburger"
+                ><i class="icon icon-hamburger"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="weather-tide-container">
+          <div class="weather-info">
+            <h2>오늘의 진도날씨 <a href="#" class="more">+</a></h2>
+            <div class="details">
+              <div class="inner">
+                <div class="info">
+                  <img
+                    src="../images/new/ico-weather-sun.png"
+                    class="weather-symbol"
+                    alt="맑음"
+                  />
+                  <span class="summary">0&deg;C 맑음</span>
+                </div>
+                <ul>
+                  <li>
+                    <i class="icon icon-umbrella"></i>
+                    <span>0%</span><span>강수량</span>
+                  </li>
+                  <li>
+                    <i class="icon icon-drop"></i>
+                    <span>0%</span><span>습도</span>
+                  </li>
+                  <li>
+                    <i class="icon icon-wind"></i>
+                    <span>0%</span><span>풍속</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--20240930 수정사항-->
+          <div class="tide-info">
+            <section class="section reservation">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="../images/new/ico-reservation.png"
+                      alt="운림삼별초 공원"
+                    />
+                    <div class="text">
+                      <span class="place">운림삽별초 공원</span>
+                      <span class="label">예약하기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="../images/new/ico-calender.png"
+                      alt="운림삼별초 공원"
+                    />
+                    <div class="text">
+                      <span class="place">국민해양안전관 </span>
+                      <span class="label">오픈대기중</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <!--//20240930 수정사항-->
+        </div>
+      </div>
+      <div class="side-menu">
+        <div class="side-menu-header">
+          <img src="../images/new/logo.png" class="logo" alt="진도" />
+          <img
+            src="../images/new/side-menu-logo-text.png"
+            class="logo-text"
+            alt="보배섬 소식통"
+          />
+          <a href="#" class="close btn-close"
+            ><i class="icon icon-close"></i
+          ></a>
+        </div>
+        <div class="relative">
+          <ul class="first">
+            <li>
+              <a href="#" class="active">소통 플랫폼 소개</a>
+            </li>
+            <li>
+              <a href="#" class="">정보 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">신청 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">예약 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">편의 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">밀착 서비스</a>
+            </li>
+            <li>
+              <a href="#" class="">알림마당</a>
+            </li>
+          </ul>
+          <ul class="second">
+            <li class="separator">
+              <a href="#"
+                ><span>소통 플랫폼 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>정보 서비스 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">사업정보</a>
+              <ul class="third">
+                <li>
+                  <a href="#"
+                    ><span>마감임박 사업정보</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>사업정보 확인</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>사업정보</span> <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>공연/행사정보</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>취업정보</span> <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li class="separator">
+              <a href="#"
+                ><span>맞춤형 정보</span> <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>신청 서비스 소개</span>
+                <i class="icon-arrow-right-large"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><span>지원사업</span></a>
+              <ul class="third">
+                <li>
+                  <a href="#"
+                    ><span>신청중인 사업</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>보조사업 정보</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>맞춤 보조사업 찾기</span>
+                    <i class="icon-arrow-right-small"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <!-- 이부분 삭제 20240930 <section class="section reservation">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="../images/new/ico-reservation.png"
+                alt="운림삼별초 공원"
+              />
+              <div class="text">
+                <span class="place">운림삽별초 공원</span>
+                <span class="label">예약하기</span>
+              </div>
+            </a>
+          </li>
+          <li class="prepare">
+            <span>오픈대기중</span>
+          </li>
+        </ul>
+      </section> -->
+      <section class="section normal information">
+        <h2 class="section-title">
+          정보서비스 <a href="#" class="btn-more">더보기+</a>
+        </h2>
+        <ul class="list scroll-y">
+          <li class="item">
+            <a href="#">
+              <div>
+                <span class="badge">일반</span>
+                <span class="date">2021.01.01</span>
+              </div>
+              <p class="title">'운림삼별초' 명칭 변경 공모 공고 안내</p>
+              <div class="detail">
+                <p>접수기간: 2024-09-10</p>
+                <p>문의전화: 061-540-1172</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div>
+                <span class="badge">일반</span>
+                <span class="date">2021.01.01</span>
+              </div>
+              <p class="title">'운림삼별초' 명칭 변경 공모 공고 안내</p>
+              <div class="detail">
+                <p>접수기간: 2024-09-10</p>
+                <p>문의전화: 061-540-1172</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div>
+                <span class="badge">일반</span>
+                <span class="date">2021.01.01</span>
+              </div>
+              <p class="title">'운림삼별초' 명칭 변경 공모 공고 안내</p>
+              <div class="detail">
+                <p>접수기간: 2024-09-10</p>
+                <p>문의전화: 061-540-1172</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section normal application">
+        <!--20240930 수정사항-->
+        <h2 class="section-title">
+          신청서비스 <a href="#" class="btn-more">더보기+</a>
+        </h2>
+        <ul class="category">
+          <li class="menu">
+            <a href="#" class="active" data-target="#tab1">지원사업</a>
+          </li>
+          <li class="menu">
+            <a href="#" data-target="#tab2">교육정보</a>
+          </li>
+        </ul>
+
+        <div id="tab1" class="content active">
+          <ul class="list">
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="tab2" class="content">
+          <ul class="list">
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업2</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <p class="title">찾아가는 디지털 서포터즈 교육 지원 사업</p>
+                <div class="detail">
+                  <p>접수기간: 2024.04.10~2024.11.30</p>
+                  <p>문의전화: 진도군 총무과/061-540-3253</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--20240930 수정사항-->
+      </section>
+      <section class="section banner schedule">
+        <a href="#" class="link">
+          <img src="../images/new/ico-calender.png" alt="달력" />
+          <span>이달의 행사일정을 확인하세요</span>
+        </a>
+      </section>
+      <section class="section normal menu">
+        <ul class="menu">
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/01.svg" alt="날씨정보" />
+              </div>
+              <p class="menu-name">날씨정보</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/02.svg" alt="교통정보" />
+              </div>
+              <p class="menu-name">교통정보</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/03.svg" alt="물때정보" />
+              </div>
+              <p class="menu-name">물때정보</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/04.svg" alt="공사정보" />
+              </div>
+              <p class="menu-name">공사정보</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/05.svg" alt="당번약국" />
+              </div>
+              <p class="menu-name">당번약국</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/06.svg" alt="알림" />
+              </div>
+              <p class="menu-name">알림</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/07.svg" alt="스마트 인증" />
+              </div>
+              <p class="menu-name">날씨정보</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="image-container">
+                <img src="../images/new/menu/08.svg" alt="내지역 정보" />
+              </div>
+              <p class="menu-name">내지역 정보</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이메일주소무단수집거부</a>
+        </div>
+
+        <div class="footer-address">
+          58915 전라남도 진도군 진도읍 첨마길 25<br />
+          대표전화 061-544-2181~2 | FAX 061-544-0902
+        </div>
+
+        <div class="footer-copyright">
+          COPYRIGHT(C) 2024 JINDO COUNTY. ALL RIGHTS RESERVED
+        </div>
+      </footer>
+
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item home active"></a>
+        <a href="#" class="nav-item broadcast"></a>
+        <a href="#" class="nav-item certificate"></a>
+        <a href="#" class="nav-item app"></a>
+        <div class="popup-container" id="popup-broadcast">
+          <div class="popup">
+            <button class="close-btn">&times;</button>
+            <h2 class="popup-title">마을방송 바로가기</h2>
+            <p class="popup-description">클릭하시면 해당 앱으로 이동합니다.</p>
+            <div class="popup-image">
+              <a href="#"
+                ><img
+                  src="../images/new/broadcast-1.png"
+                  alt="스마트 마을방송 주민용"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/new/broadcast-2.png"
+                  alt="스마트 마을방송 주민용"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="popup-container" id="popup-certificate">
+          <div class="popup">
+            <button class="close-btn">&times;</button>
+            <h2 class="popup-title">스마트신분증</h2>
+            <p class="popup-description">
+              진도군 공공시설 회원카드를 연동해주세요.
+            </p>
+            <ul class="tab-header">
+              <li>
+                <a href="#" class="active">스마트 신분증<br />(공공앱 전용)</a>
+              </li>
+              <li>
+                <a href="#">진도 철마 도서관<br />(도서대출용)</a>
+              </li>
+              <li>
+                <a href="#">진도군 실내 수영장<br />(입장 전용)</a>
+              </li>
+            </ul>
+            <!-- 수정 시작 2024.09.20 01:00 -->
+            <ul class="tab-body slider">
+              <li>
+                <div>
+                  <p class="certificate-title">스마트 신분증</p>
+                  <p class="certificate-name">성명: 김문식</p>
+                  <p class="certificate-no">회원번호: 000162409110001</p>
+                  <div class="image-container">
+                    <img src="../images/new/dummy-qr.png" alt="스마트 신분증" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="certificate-title">진도 철마 도서관</p>
+                  <div class="lock">
+                    <p class="lock-text">
+                      [진도 철마 도서관] 회원에 가입하시면<br />자동으로
+                      연동됩니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="certificate-title">진도군 실내 수영장</p>
+                  <div class="lock">
+                    <p class="lock-text">
+                      [진도군 실내 수영장] 회원에 가입하시면<br />자동으로
+                      연동됩니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- 수정 종료 2024.09.20 01:00 -->
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- 수정 시작 2024.09.20 01:00 -->
+    <script src="../js/new/tiny-slider.js"></script>
+    <!-- 수정 종료 2024.09.20 01:00 -->
+    <script src="../js/new/script.js"></script>
+    <script src="../js/new/jquery-3.7.1.min.js"></script>
+    <!--20240929tab 추가-->
+    <script>
+      $(document).ready(function () {
+        // 탭 클릭 이벤트 처리
+        $(".category .menu a").click(function (event) {
+          event.preventDefault(); // 기본 링크 동작 막기
+
+          // 모든 탭에서 active 클래스 제거
+          $(".category .menu a").removeClass("active");
+          // 클릭한 탭에 active 클래스 추가
+          $(this).addClass("active");
+
+          // 모든 콘텐츠 숨기기
+          $(".content").removeClass("active").hide();
+          // 클릭한 탭에 해당하는 콘텐츠 보여주기
+          $($(this).data("target")).addClass("active").show();
+        });
+      });
+    </script>
+  </body>
+</html>

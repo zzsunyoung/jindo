@@ -1,0 +1,60 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 카드 간격 */
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 호버 시 더 강한 그림자 */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.badge {
+  background-color: #777;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: Pretendard, sans-serif;
+}
+
+.due-date {
+  font-size: 12px;
+  font-family: Pretendard, sans-serif;
+  color: #777;
+}
+
+.due-date strong {
+  color: #172F84; /* 강조된 날짜 */
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Pretendard, sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}

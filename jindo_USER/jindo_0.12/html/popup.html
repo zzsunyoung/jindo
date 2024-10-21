@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1" />
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+  </head>
+  <body class="page-service">
+    <!-- 참고 코드, 팝업창 열기 -->
+    <ul style="margin: 0 auto; width: 80%">
+      <li><a href="#" class="open-popup" data-target=".popup-style-1">3.검색팝업케이스-1.텍스트검색</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-2">3.검색팝업케이스-2.드롭다운+텍스트검색</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-3">3.검색팝업케이스-3.드롭다운2종+텍스트검색</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-4">3.검색팝업케이스-4.카테고리 셀렉+텍스트검색</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-5">3.검색팝업케이스-5.카테고리 셀렉+ 드롭다운+텍스트검색</a></li>
+
+      <li><a href="#" class="open-popup" data-target=".popup-style-6">1.단순메시지안내 팝업</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-7">4.제목+항목별 소제목+드롭다운</a></li>
+      <li><a href="#" class="open-popup" data-target=".popup-style-8">5.메모+사진첨부</a></li>
+
+      <!-- 추가 2024.09.19 11시 -->
+      <li><a href="#" class="open-popup" data-target=".popup-style-9">팝업 9</a></li>
+      <!-- 종료 2024.09.19 11시 -->
+    </ul>
+
+    <div class="popup-style popup-style-1">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="search-box">
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-2">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="search-box">
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>제목</option>
+                <option>제목</option>
+                <option>제목</option>
+              </select>
+            </div>
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-3">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>구분</option>
+                <option>구분</option>
+                <option>구분</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>전체</option>
+                <option>전체</option>
+                <option>전체</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-4">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="category-buttons">
+            <button class="category-btn active">ALL</button>
+            <button class="category-btn">농업</button>
+            <button class="category-btn">수산업</button>
+            <button class="category-btn">임업</button>
+            <button class="category-btn">축산업</button>
+            <button class="category-btn">일반</button>
+          </div>
+          <div class="separator"></div>
+          <div class="search-box">
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-5">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="category-buttons">
+            <button class="category-btn active">ALL</button>
+            <button class="category-btn">농업</button>
+            <button class="category-btn">수산업</button>
+            <button class="category-btn">임업</button>
+            <button class="category-btn">축산업</button>
+            <button class="category-btn">일반</button>
+          </div>
+          <div class="separator"></div>
+          <div class="search-box">
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>제목</option>
+                <option>제목</option>
+                <option>제목</option>
+              </select>
+            </div>
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-6">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="message-box">
+            <p>로그인 정보가 올바르지 않습니다.</p>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-7">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="popup-title">새로운 이벤트 생성</div>
+          <div class="dropdown-full">
+            <label class="dropdown-label">그룹선택</label>
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>제목</option>
+                <option>제목</option>
+                <option>제목</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-full">
+            <label class="dropdown-label"><span>*</span> 기록 분류</label>
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>피해조사</option>
+                <option>피해조사</option>
+                <option>피해조사</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-full">
+            <label class="dropdown-label"><span>*</span> 그룹선택</label>
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option>출장</option>
+                <option>출장</option>
+                <option>출장</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">이벤트 생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-style popup-style-8">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="search-box">
+            <div class="search-input-container">
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+          <div class="file-upload">
+            <label for="file-input" class="file-label">파일 선택</label>
+            <input type="file" id="file-input" class="file-input" />
+            <span class="file-name">선택된 파일 없음</span>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">현장사진 등록</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 추가 2024.09.19 11시 -->
+    <div class="popup-style popup-style-9">
+      <div class="popup-overlay">
+        <div class="popup">
+          <div class="category-buttons three">
+            <button class="category-btn active">ALL</button>
+            <button class="category-btn">출석</button>
+            <button class="category-btn">참여</button>
+          </div>
+          <div class="separator"></div>
+          <div class="search-box">
+            <div class="search-input-container">
+              <img src="../images/new/ico-search.svg" class="search-icon" />
+              <input type="text" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn close-popup">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 종료 2024.09.19 11시 -->
+
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item home active"></a>
+      <a href="#" class="nav-item broadcast"></a>
+      <a href="#" class="nav-item certificate"></a>
+      <a href="#" class="nav-item app"></a>
+    </nav>
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+  </body>
+</html>

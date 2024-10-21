@@ -1,0 +1,46 @@
+.banner {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.section-grid {
+  padding: 0 20px;
+  margin-top: 30px;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+    padding: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    &-title {
+      font-size: 16px;
+      text-align: center;
+      line-height: 18px;
+    }
+    .grid-item {
+      font-size: 11px;
+      text-align: center;
+      line-height: 12px;
+      .icon {
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 0 auto;
+        img {
+          display: block;
+          width: 60px;
+        }
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+}

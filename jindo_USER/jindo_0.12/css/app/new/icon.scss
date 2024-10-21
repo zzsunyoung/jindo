@@ -1,0 +1,63 @@
+.gnb {
+  .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    &-find {
+      background: url(../../../images/new/ico-find.svg) center no-repeat;
+    }
+
+    &-cart {
+      background: url(../../../images/new/ico-cart.svg) center no-repeat;
+    }
+
+    &-person {
+      background: url(../../../images/new/ico-person.svg) center no-repeat;
+    }
+
+    &-hamburger {
+      background: url(../../../images/new/ico-hamburger.svg) center no-repeat;
+    }
+  }
+}
+
+.weather-tide-container {
+  .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+
+    &-umbrella {
+      background: url(../../../images/new/ico-umbrella.png) center no-repeat;
+      background-size: 18px auto;
+    }
+
+    &-drop {
+      background: url(../../../images/new/ico-drop.png) center no-repeat;
+      background-size: 12px auto;
+    }
+
+    &-wind {
+      background: url(../../../images/new/ico-wind.png) center no-repeat;
+      background-size: 18px auto;
+    }
+  }
+}
+
+.icon {
+  &-arrow-right-large {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../../images/new/ico-arrow-right-large.svg) center no-repeat;
+  }
+  &-arrow-right-small {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../../images/new/icon-arrow-right-small.svg) center no-repeat;
+  }
+}
