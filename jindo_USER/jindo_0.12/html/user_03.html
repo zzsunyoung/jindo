@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>진도</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="../css/app/new/style.css">
+    <link rel="stylesheet" href="../css/app/new/newui.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#"><img src="../images/new/logo.png" alt="진도"></a>
+          </div>
+          <div class="menu">
+            <ul class="gnb">
+              <li>
+                <a href="#"><i class="icon alarm"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-hamburger"><i class="icon icon-hamburger"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+
+    <!-- 참고 코드, 팝업창 열기 -->
+    <ul style="margin: 0 auto; width: 80%;">
+        <li><a href="#" class="open-popup" data-target=".popup-style-1">홈_날씨정보 팝업</a></li>
+    </ul>
+
+    <div class="popup-style popup-style-1">
+        <div class="popup-overlay">
+            <div class="popup pop-weader">
+                <div class="top"><span class="badge">2024. 10. 14 (월)</span></div>
+                <ul class="weader-list">
+                    <li>
+                        <div class="tit-wrap more">
+                            <h2 class="tit">날씨 정보</h2>
+                            <a href="#" class="btmore">더보기+</a>
+                        </div>
+                        <div class="weader-info temperature">
+                            <div class="cont1">
+                                <div class="climate1">
+                                    <img src="../images/new/ico-weather-sun.png" class="weather-img" alt="맑음">
+                                    <span>맑음</span>
+                                </div>
+                                <div class="climate2">
+                                    <span class="num">00</span><span class="unit">℃</span>
+                                </div>
+                            </div>
+                            <div class="cont2">
+                                <ul class="climate-list">
+                                    <li>
+                                        <span class="img"><img src="../images/new/ico-umbrella.png" alt=""></span>
+                                        <span class="text">강수량</span>
+                                        <span class="num">-</span>
+                                    </li>
+                                    <li>
+                                        <span class="img"><img src="../images/new/ico-drop.png" alt=""></span>
+                                        <span class="text">습도</span>
+                                        <span class="num">50%</span>
+                                    </li>
+                                    <li>
+                                        <span class="img"><img src="../images/new/ico-wind.png" alt=""></span>
+                                        <span class="text">풍속</span>
+                                        <span class="num">5 m/s</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tit-wrap more">
+                            <h2 class="tit">강우량 정보</h2>
+                            <a href="#" class="btmore">더보기+</a>
+                        </div> 
+                        <div class="weader-info rainfall">
+                            <p class="ico-mark">진도읍</p>
+                            <ul class="rainfall-time" >
+                                <li><span class="txt1">시간</span><span class="txt2">0.0</span></li>
+                                <li><span class="txt1">금일</span><span class="txt2">2.5</span></li>
+                                <li><span class="txt1">전일</span><span class="txt2">0.0</span></li>
+                                <li><span class="txt1">전전일</span><span class="txt2">0.0</span></li>
+                                <li><span class="txt1">월간</span><span class="txt2">43.0</span></li>
+                            </ul>
+                            <p class="txt-info">※ 현 자료는 기상청과의 관측소 위치 차이로 기상청에서 발표한 값과 다를<br> 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tit-wrap more">
+                            <h2 class="tit">물때 정보</h2>
+                            <a href="#" class="btmore">더보기+</a>
+                        </div>
+                        <div class="weader-info warter">
+                            <dl class="address">
+                              <dt>진도</dt>
+                              <dd>전라남도 진도군 의신면 금갑리 수품항</dd>
+                            </dl>
+                            <div class="cont">
+                                <ul>
+                                    <li>
+                                        <span class="time">02:57</span>
+                                        <span class="round type1">저</span>
+                                        <strong>111<span class="unit">cm</span></strong>
+                                    </li>
+                                    <li>
+                                        <span class="time">08:33</span>
+                                        <span class="round type2">고</span>
+                                        <strong>286<span class="unit">cm</span></strong>
+                                    </li>
+                                    <li>
+                                        <span class="time">14:51</span>
+                                        <span class="round type1">저</span>
+                                        <strong>77<span class="unit">cm</span></strong>
+                                    </li>
+                                    <li>
+                                        <span class="time">21:06</span>
+                                        <span class="round type2">고</span>
+                                        <strong>354<span class="unit">cm</span></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+                <div class="action-buttons">
+                    <button class="cancel-btn close-popup">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+</body>
+</html>
