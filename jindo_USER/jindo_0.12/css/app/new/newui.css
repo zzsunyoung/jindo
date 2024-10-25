@@ -140,7 +140,7 @@ height:35px}
 .weader-info {border-radius:10px;background:linear-gradient(86deg, #6586DE -15.51%, #F39999 107.89%);box-shadow: 0px 0px 10px 0px rgba(167, 178, 228, 0.50);padding:16px 20px;width:100%;margin-top:11px;color:#fff}
 
 .popup.pop-weader .top {text-align:left}
-.popup.pop-weader .badge {display:inline-block;width:auto;padding:0 10px;border-radius:50px;border:1px solid #4D67DF;color:#fff;font-size:12px;font-weight:400;background:#4D67DF;font-family:"GmarketSans";line-height:24px}
+.popup.pop-weader .badge {display:inline-block;width:auto;padding:0 10px;border-radius:50px;border:1px solid #4D67DF;color:#fff;font-size:12px;font-weight:400;background:#4D67DF;font-family: "GmarketSans";line-height:24px}
 .popup.pop-weader .action-buttons {width:60px;height:60px;left:auto;bottom:auto;margin-top:10px;border-radius:50%;text-align:center;bottom:-70px}
 .popup.pop-weader .action-buttons button {color:#000;font-size:11px;font-weight:400;letter-spacing:-0.44px;background:url(../../../images/new/user/pop-close.svg) no-repeat 16px 8px #fff;background-size:28px 28px;padding-top:37px;box-sizing:border-box;border-right:0;font-family: "GmarketSans";}
 
@@ -179,12 +179,12 @@ font-weight:500;text-align:left;line-height:14px}
 .weader-info.warter .cont ul li {position:relative;width:50%;float:left;height:20px;line-height:20px;margin-top:6px;box-sizing:border-box;padding-right:14px}
 .weader-info.warter .cont ul li span {display:inline-block}
 .weader-info.warter .cont ul:after {content:'';display:block;clear:both}
-.weader-info.warter .cont ul .time {position:relative;display:inline-block;padding-right:6px;margin-right:6px;width:38px;font-size:10px;font-weight:400;vertical-align:middle;text-align:right;line-height:22px}
+.weader-info.warter .cont ul .time {position:relative;display:inline-block;padding-right:6px;margin-right:6px;width:38px;font-size:10px;font-weight:400;vertical-align:middle;text-align:right;line-height:21px}
 .weader-info.warter .cont ul .time:after {content:'';display:block;position:absolute;top:7px;width:1px;height:6px;background:#B5B5B5;right:0}
 .weader-info.warter .cont ul .round {display:inline-block;border-radius:50%;width:20px;height:20px;font-size:8px;font-weight:500;line-height:20px;vertical-align:middle;text-align:center;margin-left:-4px}
 .weader-info.warter .cont ul li .round.type1 {background:#0470B7;}
 .weader-info.warter .cont ul li .round.type2 {background:#EC0808;}
-.weader-info.warter .cont ul li strong {display:inline-block;width:37px;font-size:10px;font-weight:500;vertical-align:bottom;text-align:right;line-height:22px}
+.weader-info.warter .cont ul li strong {display:inline-block;width:37px;font-size:10px;font-weight:500;vertical-align:bottom;text-align:right;line-height:21px}
 .weader-info.warter .cont ul li strong .unit {font-size:8px;font-weight:400;vertical-align:bottom}
 .weader-info.warter .cont ul li:nth-child(2n) {padding-left:14px;padding-right:0}
 .weader-info.warter .cont ul li:nth-child(2n):after {content:'';display:block;position:absolute;top:2px;width:1px;height:16px;background:#fff;left:0}
