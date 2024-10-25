@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* font */
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {font-family: "GmarketSans";}
-
 .gnb-sub.bgw {background:#fff}
 .gnb-sub.bgw .btn {margin-top:5px}
 .gnb-sub .header-menu .btn-alarm {position:relative;width:26px;height:24px;background:url(../../../images/new/user/btn-alarm.svg) center no-repeat;}
@@ -89,7 +88,7 @@ height:35px}
 .user-info-list:before {content: "";order: 5;flex-basis: 100%;height:0;}
 .user-info-list li:nth-child(1) {order: 1;}
 .user-info-list li:nth-child(2) {order: 2;}
-.user-info-list li:nth-child(3) {order: 3;}
+.user-info-list li:nth-child(3) {order: 3;width:73px;text-align:center}
 .user-info-list li:nth-child(4) {order: 4;}
 .user-info-list li:nth-child(5) {order: 6;}
 .user-info-list li:nth-child(6) {order: 7;}
@@ -141,9 +140,9 @@ height:35px}
 .weader-info {border-radius:10px;background:linear-gradient(86deg, #6586DE -15.51%, #F39999 107.89%);box-shadow: 0px 0px 10px 0px rgba(167, 178, 228, 0.50);padding:16px 20px;width:100%;margin-top:11px;color:#fff}
 
 .popup.pop-weader .top {text-align:left}
-.popup.pop-weader .badge {display:inline-block;width:auto;padding:0 10px;border-radius:50px;border:1px solid #4D67DF;color:#fff;font-size:12px;font-weight:400;background:#4D67DF;font-family:"Gmarket Sans";line-height:24px}
+.popup.pop-weader .badge {display:inline-block;width:auto;padding:0 10px;border-radius:50px;border:1px solid #4D67DF;color:#fff;font-size:12px;font-weight:400;background:#4D67DF;font-family:"GmarketSans";line-height:24px}
 .popup.pop-weader .action-buttons {width:60px;height:60px;left:auto;bottom:auto;margin-top:10px;border-radius:50%;text-align:center;bottom:-70px}
-.popup.pop-weader .action-buttons button {color:#000;font-size:11px;font-weight:400;letter-spacing:-0.44px;background:url(../../../images/new/user/pop-close.svg) no-repeat 16px 8px #fff;background-size:28px 28px;padding-top:35px;box-sizing:border-box;border-right:0}
+.popup.pop-weader .action-buttons button {color:#000;font-size:11px;font-weight:400;letter-spacing:-0.44px;background:url(../../../images/new/user/pop-close.svg) no-repeat 16px 8px #fff;background-size:28px 28px;padding-top:37px;box-sizing:border-box;border-right:0;font-family: "GmarketSans";}
 
 .weader-info.temperature {display:flex;justify-content:space-between;align-content:center;}
 .weader-info.temperature .cont1 {text-align:left}
@@ -161,8 +160,9 @@ height:35px}
 .weader-info.temperature .climate-list li span {display:block}
 .weader-info.temperature .climate-list li .num {font-size:10px;font-weight:500;margin-top:6px}
 
-.ico-mark {background:url(../../../images/new/user/ico-mark-s.svg) no-repeat 0 0 ;background-size:14px 14px;padding-left:20px;font-size:12px;
+.ico-mark {position:relative;padding-left:20px;font-size:12px;
 font-weight:500;text-align:left;line-height:14px}
+.ico-mark:after {content:'';display:block;position:absolute;top:-2px;left:0;width:14px;height:14px;background:url(../../../images/new/user/ico-mark-s.svg) no-repeat 0 0 ;background-size:14px 14px;}
 .weader-info.rainfall .rainfall-time {display:flex;justify-content:space-between;align-items:center;margin-top:13px}
 .weader-info.rainfall .rainfall-time li {position:relative;width:44px}
 .weader-info.rainfall .rainfall-time li span {display:block}
@@ -170,21 +170,21 @@ font-weight:500;text-align:left;line-height:14px}
 .weader-info.rainfall .rainfall-time .txt2 {font-size:10px;font-weight:500;margin-top:6px}
 .weader-info.rainfall .rainfall-time li:after {content:'';display:block;position:absolute;top:5px;width:1px;height:14px;background:#fff;right:0}
 .weader-info.rainfall .rainfall-time li:last-child:after {display:none}
-.weader-info.rainfall .txt-info {font-size:7.5px;font-weight:400;line-height:9px;letter-spacing:-0.15px;margin-top:12px;text-align:left;text-indent:-6px;margin-left:6px;}
+.weader-info.rainfall .txt-info {font-size:7.5px;font-weight:400;line-height:9px;letter-spacing:-0.15px;margin-top:12px;text-align:left;text-indent:-10px;margin-left:10px;line-height:9px}
 .weader-info.warter .address {position:relative;padding-left:36px;text-align:left;}
 .weader-info.warter .address:after {content:'';display:block;position:absolute;top:-4px;left:0;width:30px;height:30px;background:url(../../../images/new/user/ico-mark-b.svg) no-repeat 0 0 }
 .weader-info.warter .address dt {font-size:12px;font-weight:500;margin-top:5px} 
 .weader-info.warter .address dd {font-size:10px;font-weight:400;margin-top:4px}
 .weader-info.warter .cont ul {text-align:left;margin-top:8px}
-.weader-info.warter .cont ul li {position:relative;width:50%;float:left;height:20px;line-height:20px;margin-top:6px;box-sizing:border-box}
+.weader-info.warter .cont ul li {position:relative;width:50%;float:left;height:20px;line-height:20px;margin-top:6px;box-sizing:border-box;padding-right:14px}
 .weader-info.warter .cont ul li span {display:inline-block}
 .weader-info.warter .cont ul:after {content:'';display:block;clear:both}
-.weader-info.warter .cont ul .time {position:relative;display:inline-block;padding-right:6px;margin-right:6px;width:32px;font-size:10px;font-weight:400;vertical-align:middle;text-align:right}
+.weader-info.warter .cont ul .time {position:relative;display:inline-block;padding-right:6px;margin-right:6px;width:38px;font-size:10px;font-weight:400;vertical-align:middle;text-align:right;line-height:22px}
 .weader-info.warter .cont ul .time:after {content:'';display:block;position:absolute;top:7px;width:1px;height:6px;background:#B5B5B5;right:0}
 .weader-info.warter .cont ul .round {display:inline-block;border-radius:50%;width:20px;height:20px;font-size:8px;font-weight:500;line-height:20px;vertical-align:middle;text-align:center;margin-left:-4px}
 .weader-info.warter .cont ul li .round.type1 {background:#0470B7;}
 .weader-info.warter .cont ul li .round.type2 {background:#EC0808;}
-.weader-info.warter .cont ul li strong {display:inline-block;width:37px;font-size:10px;font-weight:500;vertical-align:bottom;text-align:right;margin-left:-4px}
+.weader-info.warter .cont ul li strong {display:inline-block;width:37px;font-size:10px;font-weight:500;vertical-align:bottom;text-align:right;line-height:22px}
 .weader-info.warter .cont ul li strong .unit {font-size:8px;font-weight:400;vertical-align:bottom}
-.weader-info.warter .cont ul li:nth-child(2n) {padding-left:14px}
+.weader-info.warter .cont ul li:nth-child(2n) {padding-left:14px;padding-right:0}
 .weader-info.warter .cont ul li:nth-child(2n):after {content:'';display:block;position:absolute;top:2px;width:1px;height:16px;background:#fff;left:0}
