@@ -2,14 +2,14 @@
 /* font */
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {font-family: "GmarketSans";}
 
-.gnb-sub.bgw {background:#fff}
+.gnb-sub.bgw {background:#fff;padding:20px 16px;border-bottom:1px solid rgba(0, 0, 0, 0.2)}
 .gnb-sub.bgw .btn {margin-top:5px}
 .gnb-sub .header-menu .btn-alarm {position:relative;width:26px;height:24px;background:url(../../../images/new/user/btn-alarm.svg) center no-repeat;}
 .gnb-sub .header-menu .btn-alarm .num {position:absolute;top:0;right:0;width:15px;height:10px;border-radius:12px;border:1px solid #FFF;background:#4D67DF;text-align:center;font-size:8px;font-weight:700;line-height:8px;color:#fff;font-family: "Apple SD Gothic Neo";}
 .gnb-sub .header-menu .btn-hamburger {width:24px;height:24px}
 
 /* 홈-일반유저 */
-.user-home {padding-top:73px; font-family: "GmarketSans";background:#F2F4FD;}
+.user-home {padding-top:74px; font-family: "GmarketSans";background:#F2F4FD;}
 .tabwrap {padding:20px 20px 0;}
 .tabwrap .tab-list ul {display:flex;justify-content:space-between;padding-bottom:30px}
 .tabwrap .tab-link {display:block;font-size:14px;font-weight:500;color:#9E9E9E;line-height:28px}
@@ -17,7 +17,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
 .tabwrap .tab-cont {display:none;}
 .tabwrap .tab-cont.active {display:block}
 
-.tab-cont.type2 {margin-left:-20px;margin-right:-20px}
+.tab-cont.type2 {margin-left:-20px;margin-right:-20px;margin-bottom:-30px;}
 .bg-wrap {position:relative;padding-bottom:40px;border-bottom-left-radius:20px;border-bottom-right-radius:20px;box-shadow: 0 8px 9px 0 rgba(0,0,0,.15);background:#F2F4FD;z-index:2;overflow:hidden}
 
 .banner-swiper {position:relative;/*overflow:hidden;padding:2px 2px 4px 2px;*/}
@@ -78,7 +78,7 @@ height:35px}
 .tit-wrap .btmore {position:absolute;top:4px;right:20px;font-size:12px;font-weight:400;color:#9E9E9E}
 .tit-wrap.type2 {margin-top:60px}
 
-.user-info {position:relative;background:#fff;padding:10px 20px 0;margin-top:-10px;z-index:1;padding-bottom:70px}
+.user-info {position:relative;background:#fff;padding:10px 20px 0;margin-top:-10px;z-index:1;padding-bottom:128px}
 .user-event {display:flex;align-items:center;margin-top:20px;justify-content:space-between; }
 .user-event li {border-radius:10px;border:1px solid #F4F4F4;background:#F9FAFC;box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.10);width:calc(50% - 6px);height:63px;box-sizing:border-box}
 .user-event li a {position:relative;display:flex;align-items:center;width:100%;height:100%;font-size:11px;font-weight:400;padding-left:63px;box-sizing:border-box}
@@ -189,13 +189,13 @@ font-weight:500;text-align:left;line-height:14px}
 .weader-info.warter .cont ul li:nth-child(2n):after {content:'';display:block;position:absolute;top:2px;width:1px;height:16px;background:#fff;left:0}
 
 /* 스마트회원증 */
-
 .pop-new .popup-overlay {right:0;bottom:0}
 .pop-new.bottom .popup-overlay {display:flex;align-content:flex-end;flex-wrap:nowrap;justify-content:center;align-items:flex-end;}
 .popup-style.bottom .popup {width:100%;padding:0 0 110px;background:transparent;}
 .pop-smart .action-buttons {width:60px;height:60px;left:50%;bottom:20px;margin-left:-30px;border-radius:50%;text-align:center;}
 .pop-smart .action-buttons button {color:#000;font-size:11px;font-weight:400;letter-spacing:-0.44px;background:url(../../../images/new/user/pop-close.svg) no-repeat 16px 8px #fff;background-size:28px 28px;padding-top:37px;box-sizing:border-box;border-right:0;font-family:"GmarketSans";}
 .pop-smart .tit {color:#FFF;font-size:14px;font-weight:500;letter-spacing:-0.5px;padding:20px 0 10px}
+
 .smart-swiper {overflow:hidden}
 .smart-swiper .swiper-pagination {top:20px;padding:0 10px;height:26px}
 .smart-swiper .swiper-pagination .swiper-pagination-bullet {position:relative;width:33.33%;height:26px;color:#fff;font-size:10px;font-weight:400;line-height:13px;letter-spacing:-0.5px;background:none;opacity:.4;margin:0;}
@@ -210,7 +210,6 @@ font-weight:500;text-align:left;line-height:14px}
 .smart-swiper .swiper-slide.type3 ul {background:url(../../../images/new/user/cardbg3.png) no-repeat;background-size:100%;}
 .smart-swiper .swiper-slide ul {width:154px;height:241px;padding-top:32px;text-align:center}
 .smart-swiper .swiper-slide.swiper-slide-active ul {width:204px;height:322px}
-
 
 .smart-swiper .swiper-slide.type1 ul .tits {color:#222}
 .smart-swiper .swiper-slide ul .tits strong {display:block;font-size:12px;font-weight:500;}
@@ -248,3 +247,25 @@ font-weight:500;text-align:left;line-height:14px}
 .smart-swiper .swiper-slide.type3 ul .info .number span {color:#222}
 .smart-swiper .swiper-slide.type3 ul .info .number span:first-child {color:#1E378A}
 
+.smart-swiper .swiper-slide.swiper-slide-active.none ul:before { bottom:4px;width:197px;height:314px;left:4px;border-radius:5px}
+.smart-swiper .swiper-slide.none ul:before {content:'';display:block;position:absolute;bottom:2px;left:28px;width:149px;height:236px;background:rgba(0,0,0,.6);border-radius:5px}
+.smart-swiper .swiper-slide .no-txt {display:none}
+.smart-swiper .swiper-slide.none .no-txt {position:absolute;top:50%;left:50%;width:100%;z-index:3;transform:translate(-50%, -50%);display:block;color:#fff;font-size:14px;font-weight:400;line-height:16.58px;background:url(../../../images/new/user/lock.svg) top center no-repeat;background-size:60px 60px;padding-top:80px}
+.smart-swiper .swiper-slide.none .profile,
+.smart-swiper .swiper-slide.none ul .info,
+.smart-swiper .swiper-slide.none ul .qr {display:none}
+
+/* 마이페이지 */
+.mypage {padding:74px 20px 0}
+.mypage .profile {display:flex;padding:30px 0 40px;align-items:center;}
+.mypage .profile .photo img {border:1px solid #9e9e9e;width:60px;height:60px;margin-right:16px;border-radius:50%}
+.mypage .profile-info .name {color:#000;font-size:16px;font-weight:400;margin-bottom:10px}
+.mypage .profile-info li {font-size:10px;font-weight:400;color:#717171}
+.mypage .profile-info .txt {display:inline-block;width:42px;margin-right:5px}
+.mypage .profile-info li + li {margin-top:4px}
+.mypage .mypage-list p {font-size:12px;font-weight:400;line-height:15.6px;color:#757575}
+.mypage .mypage-list a {position:relative;display:block;width:100%;color:#222;font-size:15px;font-weight:400;line-height:19.5px;margin-top:12px}
+.mypage .mypage-list a:after {content:'';display:block;width:16px;height:16px;position:absolute;top:50%;transform:translateY(-50%);right:0;background:url(../../../images/new/user/ico-myarr.svg) top center no-repeat;background-size:16px 16px}
+.mypage .mypage-list a + a {margin-top:12px}
+.mypage .mypage-list li + li {margin-top:30px}
+.mypage .logout {display:inline-block;color:#757575;font-size:12px;font-weight:400;line-height:15.6px;margin:40px 0 50px}

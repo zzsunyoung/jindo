@@ -284,12 +284,14 @@
         });
     }
     //스마트 회원증 추가
+    //스마트 회원증 추가
     if (doc.querySelector(".smart-swiper")) {
         menu_arr = ['진도 철마 도서관<br> (도서대출용)','진도군 실내 수영장<br>(입장 전용)','스마트 회원증<br>(공공앱 전용)']
         var swiper = new Swiper(".smart-swiper", {
             spaceBetween:5,
             centeredSlides: true,
             slidesPerView: 'auto',
+            autoHeight: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
