@@ -250,10 +250,11 @@ font-weight:500;text-align:left;line-height:14px}
 .smart-swiper .swiper-slide.swiper-slide-active.none ul:before { bottom:4px;width:197px;height:314px;left:4px;border-radius:5px}
 .smart-swiper .swiper-slide.none ul:before {content:'';display:block;position:absolute;bottom:2px;left:28px;width:149px;height:236px;background:rgba(0,0,0,.6);border-radius:5px}
 .smart-swiper .swiper-slide .no-txt {display:none}
-.smart-swiper .swiper-slide.none .no-txt {position:absolute;top:50%;left:50%;width:100%;z-index:3;transform:translate(-50%, -50%);display:block;color:#fff;font-size:14px;font-weight:400;line-height:16.58px;background:url(../../../images/new/user/lock.svg) top center no-repeat;background-size:60px 60px;padding-top:80px}
+.smart-swiper .swiper-slide.none .no-txt {position:absolute;bottom:71px;left:50%;width:100%;z-index:3;transform:translateX(-50%);display:block;color:#fff;font-size:10.5px;font-weight:400;line-height:12.6px;background:url(../../../images/new/user/lock.svg) top center no-repeat;background-size:45px 45px;padding-top:60px}
 .smart-swiper .swiper-slide.none .profile,
 .smart-swiper .swiper-slide.none ul .info,
 .smart-swiper .swiper-slide.none ul .qr {display:none}
+.smart-swiper .swiper-slide.none.swiper-slide-active .no-txt {top:50%;bottom:auto;font-size:14px;transform:translate(-50%, -50%);line-height:16.58px;background:url(../../../images/new/user/lock.svg) top center no-repeat;background-size:60px 60px;padding-top:80px}
 
 /* 마이페이지 */
 .mypage {padding:74px 20px 0}
@@ -265,7 +266,7 @@ font-weight:500;text-align:left;line-height:14px}
 .mypage .profile-info li + li {margin-top:4px}
 .mypage .mypage-list p {font-size:12px;font-weight:400;line-height:15.6px;color:#757575}
 .mypage .mypage-list a {position:relative;display:block;width:100%;color:#222;font-size:15px;font-weight:400;line-height:19.5px;margin-top:12px}
-.mypage .mypage-list a:after {content:'';display:block;width:16px;height:16px;position:absolute;top:50%;transform:translateY(-50%);right:0;background:url(../../../images/new/user/ico-myarr.svg) top center no-repeat;background-size:16px 16px}
+.mypage .mypage-list a:after {content:'';display:block;width:16px;height:16px;position:absolute;top:50%;transform:translateY(-50%);right:0;background:url(../../../images/new/user/ico-listarr.svg) top center no-repeat;background-size:16px 16px}
 .mypage .mypage-list a + a {margin-top:12px}
 .mypage .mypage-list li + li {margin-top:30px}
 .mypage .logout {display:inline-block;color:#757575;font-size:12px;font-weight:400;line-height:15.6px;margin:40px 0 50px}
