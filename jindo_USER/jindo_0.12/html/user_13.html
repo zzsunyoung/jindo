@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>진도</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1">
-    <link rel="stylesheet" href="../css/app/new/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1" />
+    <link rel="stylesheet" href="../css/app/new/style.css" />
     <link rel="stylesheet" href="../css/app/new/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/app/new/newui.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/app/new/newui.css" />
+  </head>
+  <body>
     <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="#"><img src="../images/new/logo.png" alt="진도"></a>
-          </div>
-          <div class="menu">
-            <ul class="gnb">
-              <li>
-                <a href="#"><i class="icon alarm"></i></a>
-              </li>
-              <li>
-                <a href="#" class="btn-hamburger"><i class="icon icon-hamburger"></i></a>
-              </li>
-            </ul>
-          </div>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#"><img src="../images/new/logo.png" alt="진도" /></a>
         </div>
+        <div class="menu">
+          <ul class="gnb">
+            <li>
+              <a href="#"><i class="icon alarm"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btn-hamburger"><i class="icon icon-hamburger"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- 참고 코드, 팝업창 열기 -->
-    <ul style="margin: 0 auto; width: 80%;">
-        <li><a href="#" class="open-popup" data-target=".popup-style-1">스마트 회원증 팝업</a></li>
+    <ul style="margin: 0 auto; width: 80%">
+      <li><a href="#" class="open-popup" data-target=".popup-style-1">스마트 회원증 팝업</a></li>
     </ul>
 
     <div class="popup-style popup-style-1 pop-new bottom">
-        <div class="popup-overlay">
-            <div class="popup pop-smart">
-                <p class="tit">진도군 공공시설 회원카드를 연동해주세요.</p>
-                <div class="smart-swiper">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-wrapper">         
-                        <div class="swiper-slide type1 none"><!-- 미연동일때 class none 추가-->
-                            <div class="no-txt"> [진도 철마 도서관]<br> 회원에 가입하시면<br> 자동으로 연동됩니다.</div><!-- 미연동일때 div 추가-->
-                            <ul>
-                                <li class="tits"><strong>진도 철마 도서관</strong><span>도서 대출용</span></li>
-                                <li class="profile"><img src="../images/new/user/photo.jpg" alt=""></li>
-                                <li class="info">
-                                    <p class="name">홍길동</p> 
-                                    <p class="number">
-                                        <span>회원번호</span>
-                                        <span>000162409110001</span>
-                                    </p>
-                                </li>
-                                <li class="qr"><img src="../images/new/user/qr.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide type2 none">
-                            <div class="no-txt">[진도군 실내 수영장]<br> 정기회원으로 등록하시면<br> 자동으로 연동됩니다.</div>
-                            <ul>
-                                <li class="tits"><strong>진도군 실내 수영장</strong><span>입장 전용</span></li>
-                                <li class="profile"><img src="../images/new/user/photo.jpg" alt=""></li>
-                                <li class="info">
-                                    <p class="name">홍길동</p> 
-                                    <p class="number">
-                                        <span>회원번호</span>
-                                        <span>000162409110001</span>
-                                    </p>
-                                </li>
-                                <li class="qr"><img src="../images/new/user/qr.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide type3">
-                            <ul>
-                                <li class="tits"><strong>스마트 회원증</strong><span>공공앱 전용</span></li>
-                                <li class="profile"><img src="../images/new/user/ico-user-b.svg" alt=""></li>
-                                <li class="info">
-                                    <p class="name">홍길동</p> 
-                                    <p class="number">
-                                        <span>회원번호</span>
-                                        <span>000162409110001</span>
-                                    </p>
-                                </li>
-                                <li class="qr"><img src="../images/new/user/qr.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>  
-            
-                <div class="action-buttons">
-                    <button class="cancel-btn close-popup">닫기</button>
+      <div class="popup-overlay">
+        <div class="popup pop-smart">
+          <p class="tit">진도군 공공시설 회원카드를 연동해주세요.</p>
+          <div class="smart-swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide type1 none">
+                <!-- 미연동일때 class none 추가-->
+                <div class="no-txt">
+                  [진도 철마 도서관]<br />
+                  회원에 가입하시면<br />
+                  자동으로 연동됩니다.
                 </div>
+                <!-- 미연동일때 div 추가-->
+                <ul>
+                  <li class="tits"><strong>진도 철마 도서관</strong><span>도서 대출용</span></li>
+                  <li class="profile"><img src="../images/new/user/photo.jpg" alt="" /></li>
+                  <li class="info">
+                    <p class="name">홍길동</p>
+                    <p class="number">
+                      <span>회원번호</span>
+                      <span>000162409110001</span>
+                    </p>
+                  </li>
+                  <li class="qr"><img src="../images/new/user/qr.jpg" alt="" /></li>
+                </ul>
+              </div>
+              <div class="swiper-slide type2 none">
+                <div class="no-txt">
+                  [진도군 실내 수영장]<br />
+                  정기회원으로 등록하시면<br />
+                  자동으로 연동됩니다.
+                </div>
+                <ul>
+                  <li class="tits"><strong>진도군 실내 수영장</strong><span>입장 전용</span></li>
+                  <li class="profile"><img src="../images/new/user/photo.jpg" alt="" /></li>
+                  <li class="info">
+                    <p class="name">홍길동</p>
+                    <p class="number">
+                      <span>회원번호</span>
+                      <span>000162409110001</span>
+                    </p>
+                  </li>
+                  <li class="qr"><img src="../images/new/user/qr.jpg" alt="" /></li>
+                </ul>
+              </div>
+              <div class="swiper-slide type3">
+                <ul>
+                  <li class="tits"><strong>스마트 회원증</strong><span>공공앱 전용</span></li>
+                  <li class="profile"><img src="../images/new/user/ico-user-b.svg" alt="" /></li>
+                  <li class="info">
+                    <p class="name">홍길동</p>
+                    <p class="number">
+                      <span>회원번호</span>
+                      <span>000162409110001</span>
+                    </p>
+                  </li>
+                  <li class="qr"><img src="../images/new/user/qr.jpg" alt="" /></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../js/new/tiny-slider.js"></script>
     <script src="../js/new/swiper-bundle.min.js"></script>
     <script src="../js/new/script.js"></script>
     <script src="../js/new/jquery-3.7.1.min.js"></script>
-   
-</body>
+  </body>
 </html>
