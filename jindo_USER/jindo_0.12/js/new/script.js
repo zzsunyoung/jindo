@@ -284,7 +284,6 @@
         });
     }
     //스마트 회원증 추가
-    //스마트 회원증 추가
     if (doc.querySelector(".smart-swiper")) {
         menu_arr = ['진도 철마 도서관<br> (도서대출용)','진도군 실내 수영장<br>(입장 전용)','스마트 회원증<br>(공공앱 전용)']
         var swiper = new Swiper(".smart-swiper", {
@@ -293,7 +292,7 @@
             slidesPerView: 'auto',
             autoHeight: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".smart-swiper .swiper-pagination",
                 clickable: true,
                 renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + menu_arr[index] + "</span>";                
@@ -302,5 +301,27 @@
         });
     }
 
-    
+    //일반유저 홈
+    if (doc.querySelector(".home-swiper")) {
+        menu_arr = ['홈','사업정보','공연행사','취업정보','교육신청']
+        var swiper = new Swiper(".home-swiper", {
+            spaceBetween:20,
+            //centeredSlides: true,
+            slidesPerView: 1,
+            autoHeight: true,
+            pagination: {
+                el: ".home-swiper .swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                return '<span class="' + className + '"><span class="text">' + menu_arr[index] + "</span></span>";                
+                },
+            },
+            on: {
+                slideChange: function () {
+                    $(window).scrollTop(0);
+                },
+            }
+        });
+     }
+   
 })(window, document, tns);
