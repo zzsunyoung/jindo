@@ -323,5 +323,51 @@
             }
         });
      }
+
+    //조직도
+    if (doc.querySelector(".accor-box")) {
+        document.querySelectorAll('.accor-box > .accor-tit').forEach((tit) => {
+            tit.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const accorBox = this.closest('.accor-box');
+                document.querySelectorAll('.accor-box.on').forEach((openBox) => {
+                    if (openBox !== accorBox) {
+                        openBox.classList.remove('on');
+                    }
+                });
+                accorBox.classList.toggle('on');
+            });
+        });
+        
+        document.querySelectorAll('.accor-wrap-in > .accor-tit').forEach((tit) => {
+            tit.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const accorWrapIn = this.closest('.accor-wrap-in');
+                accorWrapIn.querySelectorAll('.on').forEach((openItem) => {
+                    openItem.classList.remove('on');
+                });
+                accorWrapIn.classList.toggle('on');
+            });
+        });
+        
+        document.querySelectorAll('.accor-cont-in .accor-tit').forEach((tit) => {
+            tit.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const parentLi = this.closest('li');
+                parentLi.parentElement.querySelectorAll('li.on').forEach((openLi) => {
+                    if (openLi !== parentLi) {
+                        openLi.classList.remove('on');
+                    }
+                });
+                parentLi.classList.toggle('on');
+            });
+        });
+    }
+
+
+   
    
 })(window, document, tns);
