@@ -365,8 +365,26 @@
                 parentLi.classList.toggle('on');
             });
         });
+
+        document.querySelectorAll('.sort a').forEach(a => {
+          a.addEventListener('click', function(event) {
+              event.preventDefault(); 
+              document.querySelectorAll('.sort a').forEach(a => a.classList.remove('active'));
+              this.classList.add('active');
+          });
+      });
     }
 
+    // 참여검증
+    if (doc.querySelector(".sort")) {
+      document.querySelectorAll('.sort a').forEach(a => {
+        a.addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelectorAll('.sort a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+    }
 
    
    
