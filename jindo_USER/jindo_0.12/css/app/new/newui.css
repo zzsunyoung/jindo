@@ -233,37 +233,6 @@ header.gnb-sub.bgw .btn-back {
   padding-right: 0;
 }
 
-.tabwrap {
-  padding: 20px 20px 0;
-}
-.tabwrap .tab-list ul {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-.tabwrap .tab-link {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  color: #9e9e9e;
-  line-height: 28px;
-}
-.tabwrap .tab-link.active {
-  color: #000;
-  border-bottom: 1.5px solid #000;
-}
-.tabwrap .tab-cont {
-  display: none;
-}
-.tabwrap .tab-cont.active {
-  display: block;
-}
-.tab-cont.type2 {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: -30px;
-}
-
 .bg-wrap {
   position: relative;
   padding-bottom: 40px;
