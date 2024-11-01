@@ -150,6 +150,7 @@ header.gnb-sub.bgw .title {
   text-align: center;
   font-size: 15px;
   line-height: 30px;
+  margin-top:2px
 }
 header.gnb-sub.bgw .btn-back {
   position: absolute;
@@ -2292,7 +2293,6 @@ header.gnb-sub.bgw .btn-back {
 .verification-list > li + li {margin-top:12px}
 .verification-list li .time {display:inline-block;padding-left:56px}
 .verification-list.end > li .top .tit {color:#8E8E8E}
-
 .verification .bg-wrap {padding-bottom:0}
 .verification .bg-wrap .txt-box {padding:30px 20px}
 .verification .bg-wrap .txt-box ul {margin-top:12px;}
@@ -2312,11 +2312,54 @@ header.gnb-sub.bgw .btn-back {
 .verification .sort a {display:inline-block;padding:8px 20px;border-radius:56px;border:1px solid #BEBEBE;background:rgba(234, 234, 234, 0.95);height:28px;box-sizing:border-box;color:#FFF;font-size:12px;letter-spacing:-0.24px;box-sizing:border-box;color:#717171 }
 .verification .sort a + a {margin-left:4px}
 .verification .sort a.active {background:#4D67DF;color:#fff;border:1px solid #4D67DF;}
+.fix-bt {position:fixed;left:20px;right:20px;bottom:40px;z-index:5}
+.fix-bt a{display:block;width:100%;border-radius:100px;height:54px;background:#172E84;box-shadow:0px 0px 10px 2px rgba(0, 0, 0, 0.25);box-sizing:border-box;font-size:14px;font-weight:700;color:#fff;text-align:center;padding-top:21px}
+.fix-bt a.end {background:#DB0000;}
+.sort-list {margin-top:16px}
+.sort-list > li {position:relative;border-radius:10px;border:1px solid #D9D9D9;padding:20px}
+.sort-list > li > ul > li {color:#000;font-size:12px}
+.sort-list > li > ul > li + li {margin-top:8px}
+.sort-list > li > ul > li:first-child span {font-weight:700}
+.sort-list > li > ul > li span:first-child {display:inline-block;width:66px;}
+.sort-list > li > ul > li span:nth-child(2n) {display:inline-block;margin-left:6px}
+.sort-list > li + li {margin-top:12px}
+.sort-list .bul {position:absolute;width:64px;right:20px;top:20px;font-size:10px;letter-spacing:-0.2px;padding-left:18px}
+.sort-list .bul.blue:before {background:#3156FF}
+.sort-list .bul:before {content:'';position:absolute;top:-2px;left:0;display:block;width:12px;height:12px;border-radius:50%;}
+.sort-list .bul.red:before {background:#FF1E1E}
 
 /* 참여검증 팝업 */
 .popup-style.pop-new .category-btn {border:1px solid #C0C0C0;background:#F8F9FC}
 .popup-style.pop-new .category-btn.active{background-color:#172E84;color:white}
 .popup-style.pop-new .confirm-btn {background-color:#172E84}
+
+/* 내 파일 공간 */
+.myfile {padding:70px 20px 100px;margin-bottom:0}
+.myfile .bg-box {margin-top:16px}
+.myfile .bg-box ul li {position:relative;color:#000;font-size:13px;padding-left:20px;line-height:1.2}
+.myfile .bg-box ul li:after {content:"";width:3px;height:3px;position:absolute;left:8px;top:5px;background:#000;} 
+.myfile .bg-box ul li + li {margin-top:10px}
+.result-num {color:#000;font-size:14px;margin-top:20px}
+.no-result {margin-top:40px;color:#969696;text-align:center;font-size:14px}
+.result-list {margin-top:12px}
+.result-list .item {position:relative;display:flex;border:1px solid #E1E1E1;border-radius:10px;justify-content: space-between;}
+.result-list .item ul {width:100%}
+.result-list .item ul li {display:flex;justify-content:flex-start;width:100%;height:32px;text-align:left;border-top:1px solid #E1E1E1;}
+.result-list .item ul li:first-child {border-top:0;;}
+.result-list .item ul li span:first-child {display:block;width:77px;height:100%;color:#FFF;font-size:10px;background:#4D67DF;padding:13px 0 0 10px;border-top-left-radius:10px;}
+.result-list .item ul li span:last-child {display:block;color:#222;font-size:10px;border-left:1px solid #E1E1E1;padding:13px 0 0 10px;}
+.result-list .item ul li:nth-child(2) span:first-child {border-top-left-radius:0}
+.result-list .item ul li:last-child span:first-child {border-top-left-radius:0;border-bottom-left-radius:10px}
+.result-list .item ul li span:last-child a {font-weight:700;border-bottom:1px solid #222;font-size:10px;}
+.result-list .item .bt-del {position:absolute;right:0;display:flex;width:50px;height:100%;border-left:1px solid #E1E1E1;z-index:2;background:#fff;border-top-right-radius:10px;border-bottom-right-radius:10px;text-align:center;align-items:center;justify-content:center;}
+.result-list .item .bt-del span {display:inline-block;width:20px;color:#F00;font-size:10px;background: url(../../../images/new/user/ico-del.svg) no-repeat center 0;background-size:16px 16px;padding-top:26px;text-align:center;}
+.result-list .item + .item {margin-top:12px}
+.bottom-bt {position:fixed;bottom:0;width:100%;background:#FFF;box-shadow:0px 0px 6px 0px rgba(0, 0, 0, 0.15);padding:10px 20px 20px 20px;margin:0 -20px;z-index:10}
+.bottom-bt a {display:block;width:100%;height:43px;border-radius:6px;background:#172E84;text-align:center;color:#FFF;font-size:14px;}
+.bottom-bt a span {display:inline-block;background: url(../../../images/new/user/ico-plus.svg) no-repeat 0 14px;background-size:12px 12px;padding:14px 0 0 20px}
+
+/* 내 파일 공간 팝업 */
+.popup-style.pop-new .file-label {background: #CDCDCD;}
 
 /* 화면틀어지는 부분 대응*/
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1"/>
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+    <link rel="stylesheet" href="../css/app/new/newui.css" />
+  </head>
+  <body>
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#"><img src="../images/new/logo.png" alt="진도"></a>
+          </div>
+          <div class="menu">
+            <ul class="gnb">
+              <li>
+                <a href="#"><i class="icon alarm"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-hamburger"><i class="icon icon-hamburger"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+
+    <!-- 참고 코드, 팝업창 열기 -->
+    <ul style="margin: 0 auto; width: 80%;">
+        <li><a href="#" class="open-popup" data-target=".popup-style-6">내파일공간_파일업로드</a></li>
+    </ul>
+
+    <div class="popup-style popup-style-6 pop-new">
+      <div class="popup-overlay">
+          <div class="popup">
+            <div class="file-upload">
+                <label for="file-input" class="file-label">파일 선택</label>
+                <input type="file" id="file-input" class="file-input" />
+                <span class="file-name">선택된 파일 없음</span>
+            </div>
+            <div class="action-buttons">
+                <button class="cancel-btn close-popup">취소</button>
+                <button class="confirm-btn close-popup">파일 업로드</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+    <script src="../js/new/jquery-3.7.1.min.js"></script>
+   
+  </body>
+</html>

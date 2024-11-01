@@ -18,7 +18,7 @@
     <div class="content verification">
         <div class="bg-wrap">
             <div class="txt-box">
-                <div class="top"><span class="flag">출석</span><span class="tit">출석검증 제목</span></div>
+                <div class="top"><span class="flag">출석</span><!--<span class="flag type2">참여</span>--><span class="tit long">출석검증 제목 출석검증 제목 출석검증 제목 출석검증 제목 출석검증</span></div><!--text가 길경우 class long 추가-->
                 <ul>
                     <li><span>주관부서</span>:<span>군수</span></li>
                     <li><span>대상</span>:<span>00</span></li>
@@ -33,6 +33,10 @@
                 <li><span class="txt">참석</span><span class="num">2</span></li>
                 <li><span class="txt">미참석</span><span class="num">00</span></li>
             </ul>
+            <!-- 하나일뗴 -->
+            <!-- <ul class="check-list">
+                <li><span class="txt">참석</span><span class="num">00</span></li>
+            </ul> -->
             <div class="search-wrap">
                 <div class="input-wrap">
                     <a href="" class="bt-search"></a>
@@ -41,10 +45,48 @@
                 <button type="button" class="bt-reset">초기화</button>
             </div>
             <div class="sort">
-                <a href="#">전체(00)</a>
+                <a href="#" class="active">전체(00)</a>
                 <a href="#">참석(2)</a>
                 <a href="#">미참석(00)</a>
             </div>
+            <ul class="sort-list">
+                <li>
+                    <ul>
+                        <li><span>이름</span>:<span>아무개</span></li>
+                        <li><span>전화번호</span>:<span>010-0000-0000</span></li>
+                        <li><span>체크일시</span>:<span>2024-00-00 00:00</span></li>
+                    </ul>
+                    <div class="bul blue">참석완료</div>
+                </li>
+                <li>
+                    <ul>
+                        <li><span>이름</span>:<span>아무개</span></li>
+                        <li><span>전화번호</span>:<span>010-0000-0000</span></li>
+                        <li><span>체크일시</span>:<span>2024-00-00 00:00</span></li>
+                    </ul>
+                    <div class="bul red">미참석</div>
+                </li>
+                <li>
+                    <ul>
+                        <li><span>이름</span>:<span>아무개</span></li>
+                        <li><span>전화번호</span>:<span>010-0000-0000</span></li>
+                        <li><span>체크일시</span>:<span>2024-00-00 00:00</span></li>
+                    </ul>
+                    <div class="bul blue">참석완료</div>
+                </li>
+                <li>
+                    <ul>
+                        <li><span>이름</span>:<span>아무개</span></li>
+                        <li><span>전화번호</span>:<span>010-0000-0000</span></li>
+                        <li><span>체크일시</span>:<span>2024-00-00 00:00</span></li>
+                    </ul>
+                    <div class="bul red">미참석</div>
+                </li>
+            </ul>
+        </div>
+        <div class="fix-bt">
+            <a href="">체크 시작</a>
+            <!-- <a href="" class="end">체크 종료</a> -->
         </div>
     </div>
 
