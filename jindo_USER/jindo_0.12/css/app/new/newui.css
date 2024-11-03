@@ -2375,7 +2375,7 @@ header.gnb-sub.bgw .btn-back {
 .map-inner {position:relative;height:calc(100vh - 70px);overflow:hidden}
 .map-img img {width:100%}
 .map-inner .search {position:absolute;display:block;top:76px;right:20px;width:46px;height:46px;background:url(../../../images/new/user/map_search.svg) no-repeat center center;background-size:46px 46px;}
-.map-inner .bt-list {display:block;position:absolute;bottom:7%;left:50%;transform:translateX(-50%);width:84px;height:33px;color:#000;font-size:12px;padding-top:12px;border-radius:20px;background:#FFF;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.25);text-align:center;box-sizing:border-box}
+.map-inner .bt-list {display:block;position:fixed;bottom:7%;left:50%;transform:translateX(-50%);width:84px;height:33px;color:#000;font-size:12px;padding-top:12px;border-radius:20px;background:#FFF;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.25);text-align:center;box-sizing:border-box}
 img.zoom {width:60px;height:60px}
 
 .bottom-pop {position:fixed;top:95%;left:0;right:0;height:100%;background:#fff;border-top-left-radius:20px;border-top-right-radius:20px;z-index:10; transition:top 0.3s ease;}
