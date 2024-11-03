@@ -29,22 +29,34 @@
 
     <!-- 참고 코드, 팝업창 열기 -->
     <ul style="margin: 0 auto; width: 80%;">
-        <li><a href="#" class="open-popup" data-target=".popup-style-6">내파일공간_삭제1</a></li>
+        <li><a href="#" class="open-popup" data-target=".popup-style-1">민원/출장 검색</a></li>
     </ul>
 
-    <div class="popup-style popup-style-6 pop-new">
-      <div class="popup-overlay">
-          <div class="popup">
-              <div class="message-box">
-                  <p>파일을 삭제하시겠습니까?</p>
-              </div>
-  
-              <div class="action-buttons">
-                  <button class="cancel-btn close-popup">취소</button>
-                  <button class="confirm-btn close-popup">확인</button>
-              </div>
-          </div>
-      </div>
+    <div class="popup-style popup-style-1 pop-new">
+        <div class="popup-overlay">
+            <div class="popup">
+                <div class="search-box">
+                    <div class="dropdown">
+                        <select class="dropdown-select">
+                            <option>전체</option>
+                            <option>집</option>
+                            <option>밭</option>
+                            <option>도로</option>
+                            <option>하천</option>
+                        </select>
+                    </div>
+                    <div class="search-input-container">
+                        <img src="../images/new/ico-search.svg" class="search-icon">
+                        <input type="text" class="search-input" placeholder="검색어를 입력하세요"/>
+                    </div>
+                </div>
+    
+                <div class="action-buttons">
+                    <button class="cancel-btn close-popup">취소</button>
+                    <button class="confirm-btn close-popup">검색</button>
+                </div>
+            </div>
+        </div>
     </div>
     
 

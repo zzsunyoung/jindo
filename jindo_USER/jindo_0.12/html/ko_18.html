@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1"/>
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+    <link rel="stylesheet" href="../css/app/new/newui.css" />
+  </head>
+  <body>
+    <header class="gnb-sub bgw">
+        <a href="#" class="btn-back"></a>
+        <div class="title">민원/출장</div>
+    </header>
+
+    <div class="content map">
+        <div class="map-inner">
+            <div class="pin-info top">
+                <a href="#">
+                    <span class="pin"><img src="../images/new/user/pin-home2.svg" alt=""></span>
+                    <p class="text1">전남 진도군 의신면 거룡리 520-7 마을회관</p>
+                </a>
+            </div>
+            <div class="point-box">
+                <a href="" class="tit">포인트 펼쳐보기</a>
+                <div class="point-box-cont">
+                    <div class="box no-point">등록된 포인트가 없습니다.</div>
+                    <div class="box point">
+                        <span class="number"><img src="../images/new/user/round1.svg" alt="1"></span>
+                        <span class="date">2024.09.11</span>
+                        <span class="txt">건물 외곽 오른쪽 토사 쌓임</span>
+                        <a href="#" class="bt-del"></a>
+                    </div>
+                    <div class="box point">
+                        <span class="number"><img src="../images/new/user/round2.svg" alt="1"></span>
+                        <span class="date">2024.09.11</span>
+                        <span class="txt">입력한 내용이 표시됨</span>
+                        <a href="#" class="bt-del"></a>
+                    </div>
+                    <div class="box point">
+                        <span class="number"><img src="../images/new/user/round3.svg" alt="1"></span>
+                        <span class="date">2024.09.11</span>
+                        <span class="txt">포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트포인트</span>
+                        <a href="#" class="bt-del"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="roundbt meno">메모</a>
+            <a href="#" class="roundbt camera">현장사진</a>
+            <div class="hand-box">
+                <p>지도를 손가락으로 꾹 누르시면<br /> 새로운 포인트를 생성할 수 있습니다.</p>
+            </div>
+
+            <div style="position:absolute;top:400px;left:50px">
+                <img src="../images/new/user/pin1.svg" alt="" style="width:40px;height:40px">
+                <img src="../images/new/user/pin2.svg" alt="" style="width:40px;height:40px">
+                <img src="../images/new/user/pin3.svg" alt="" style="width:40px;height:40px">
+            </div>
+
+            <div class="map-img"><img src="../images/new/user/map.jpg" alt=""></div>
+        </div>
+
+        <div class="bottom-event">
+            <div class="touch-top">
+                <span class="arr"></span>
+            </div>
+            <div class="bottom-cont">
+                <ul class="event-list">
+                    <li>
+                        <div class="first">츨장</div>
+                        <div><strong>2024-09-05</strong></div>
+                        <div>피해조사</div>
+                        <div class="last">
+                            <span class="switch-bt">
+                                <a href="#" class="btn ing on" data-message="처리상태가 “진행”으로 변경되었습니다.">진행</a>
+                                <a href="#" class="btn fin" data-message="처리상태가 “완료”로 변경되었습니다.">완료</a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay active"></div> <!-- 딤드 효과용 오버레이 -->
+        <div class="bottom-evnt-pop active">
+            <div class="evnt-pop-cont">
+            <p>아래 이벤트 중 하나를 선택해주세요</p>
+                <div class="sort">
+                    <a href="#" class="active">전체(5)</a>
+                    <a href="#">출장(3)</a>
+                    <a href="#">민원(2)</a>
+                </div>
+                <!-- 이벤트가 하나도 등록되지 않은 상태 -->
+                <!-- <div class="no-txt">새로운 이벤트를 생성해주세요.</div> -->
+                <ul class="event-list">
+                    <li>
+                        <div class="first">츨장</div>
+                        <div><a href="#">2024-09-05</a></div>
+                        <div>피해조사</div>
+                        <div class="last">
+                            <span class="switch-bt">
+                                <a href="#" class="btn ing on" id="popclose" data-message="처리상태가 “진행”으로 변경되었습니다.">진행</a>
+                                <a href="#" class="btn fin" data-message="처리상태가 “완료”로 변경되었습니다.">완료</a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-bt">
+                <a href=""><span>새로운 이벤트 생성</span></a>
+            </div>
+        </div>
+        <div id="toast" class="toast"></div>
+        <div class="toast-popup">
+            <p>새로운 이벤트가 생성되었습니다.</p>
+        </div>
+       
+    </div>
+
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+    <script src="../js/new/jquery-3.7.1.min.js"></script>
+   
+  </body>
+</html>

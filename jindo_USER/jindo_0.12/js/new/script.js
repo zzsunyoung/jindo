@@ -377,15 +377,118 @@
 
     // 참여검증
     if (doc.querySelector(".sort")) {
-      document.querySelectorAll('.sort a').forEach(a => {
-        a.addEventListener('click', function(event) {
-            event.preventDefault();
-            document.querySelectorAll('.sort a').forEach(a => a.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
+        document.querySelectorAll('.sort a').forEach(a => {
+          a.addEventListener('click', function(event) {
+              event.preventDefault();
+              document.querySelectorAll('.sort a').forEach(a => a.classList.remove('active'));
+              this.classList.add('active');
+          });
+      });
     }
 
-   
-   
+    //민원/출장 하단 클릭시 리스트
+    if (doc.querySelector(".bottom-pop")) {
+        const touchTop = document.querySelector('.touch-top');
+        const btList = document.querySelector('.bt-list');
+        const bottomPop = document.querySelector('.bottom-pop');
+        function toggleBottomPop() {
+            bottomPop.classList.toggle('on');
+        }
+        touchTop.addEventListener('click', toggleBottomPop);
+        touchTop.addEventListener('touchstart', toggleBottomPop);
+        btList.addEventListener('click', toggleBottomPop);
+    }
+
+    //민원/출장 포인트 펼쳐보기
+    if (doc.querySelector(".point-box")) {
+     
+        document.querySelector(".tit").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.querySelector(".point-box").classList.toggle("on");
+        });
+        document.querySelectorAll(".bt-del").forEach(function (delButton) {
+            delButton.addEventListener("click", function (event) {
+                event.preventDefault(); 
+                this.closest(".box.point").remove();
+            });
+        });
+    }
+  
+
+    //민원/출장 토스트팝업 스위치버튼
+    if (doc.querySelector(".toast")) {
+        const toast = document.getElementById("toast");
+        function showToastMessage(message) {
+            toast.textContent = message;7
+            toast.classList.add("show");
+            setTimeout(function () {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+      
+        document.querySelectorAll(".switch-bt .btn").forEach((button) => {
+          button.addEventListener("click", function (event) {
+              event.preventDefault(); 
+              const message = this.getAttribute("data-message");
+              const parentSwitchBt = this.closest('.switch-bt');
+              parentSwitchBt.querySelectorAll('.btn').forEach((btn) => {
+                  btn.classList.remove('on'); 
+              });
+              this.classList.add('on');
+              showToastMessage(message);
+          });
+      });
+    }
+
+//민원/출장 이벤트 팝업
+if (doc.querySelector(".bottom-event")) {
+    document.querySelectorAll('.touch-top').forEach(button => {
+      button.addEventListener('click', () => {
+        const popup = document.querySelector('.bottom-evnt-pop');
+        const overlay = document.querySelector('.overlay');
+    
+        popup.classList.toggle('active');
+        overlay.classList.toggle('active');
+      });
+    });
+    
+    // 오버레이를 클릭하여 팝업 닫기
+    document.querySelector('.overlay').addEventListener('click', () => {
+      document.querySelector('.bottom-evnt-pop').classList.remove('active');
+      document.querySelector('.overlay').classList.remove('active');
+    });
+
+    //버튼 클릭시 이벤트 팝업 닫음
+    document.getElementById('popclose').addEventListener('click', () => {
+      document.querySelector('.bottom-evnt-pop').classList.remove('active');
+      document.querySelector('.overlay').classList.remove('active');
+    });
+  }
+  
+  //새로운 이벤트 생성 토스트 팝업
+  if (doc.querySelector(".toast-popup")) {
+    window.addEventListener('load', () => {
+      const toastPopup = document.querySelector('.toast-popup');
+      toastPopup.classList.add('show');
+      setTimeout(() => {
+        toastPopup.classList.remove('show');
+      }, 3000);
+    });
+  }
+
+  //포인트 삭제 토스트 팝업
+  if (doc.querySelector(".toast-popup2")) {
+    const deleteButtons = document.querySelectorAll('.bt-del');
+    const toastPopup = document.querySelector('.toast-popup2');
+    deleteButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        toastPopup.classList.add('show');
+        setTimeout(() => {
+          toastPopup.classList.remove('show');
+        }, 3000);
+      });
+    });
+  }
+
 })(window, document, tns);
