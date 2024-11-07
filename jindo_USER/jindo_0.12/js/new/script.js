@@ -491,4 +491,26 @@ if (doc.querySelector(".bottom-event")) {
     });
   }
 
+  //구매권/쿠폰 tab 내용
+  if (doc.querySelector(".depth-3")) {
+    const tabs = document.querySelectorAll('.depth-3 a');
+    const contents = document.querySelectorAll('.cont-wrap');
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // 모든 탭과 콘텐츠 초기화
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.style.display = 'none');
+
+        // 현재 탭과 해당 콘텐츠 활성화
+        tab.classList.add('active');
+        contents[index].style.display = 'block';
+      });
+    });
+  }
+
+
+
 })(window, document, tns);

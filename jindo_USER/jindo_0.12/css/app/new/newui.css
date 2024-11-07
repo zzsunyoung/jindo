@@ -1947,10 +1947,12 @@ header.gnb-sub.bgw .btn-back {
 }
 .accor-wrap .accor-box .accor-cont .p-info {
   margin-left: 16px;
+  width:calc(100% - 106px)
 }
 .accor-wrap .accor-box .accor-cont .p-info li {
   position: relative;
-  width: 185px;
+  width:100%;
+  min-height:21px
 }
 .accor-wrap .accor-box .accor-cont .p-info li.bt2 {
   height: 43px;
@@ -1987,13 +1989,13 @@ header.gnb-sub.bgw .btn-back {
   background: url(../../../images/new/user/ico-fax.svg) no-repeat;
 }
 .accor-wrap .accor-box .accor-cont .p-info .ico5 {
-  background: url(../../../images/new/user/ico-mail.svg) no-repeat;
+  background: url(../../../images/new/user/ico-mail.svg) no-repeat 0 1px;
 }
 .accor-wrap .accor-box .accor-cont .p-info .txt {
   color: #000;
   font-size: 12px;
   margin-left: 10px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 .accor-wrap .accor-box .accor-cont .p-info .txt strong {
   color: #4d67df;
@@ -2183,6 +2185,7 @@ header.gnb-sub.bgw .btn-back {
 }
 .accor-wrap .accor-box.on .accor-cont .accor-wrap-in.on .accor-cont-in li .p-info {
   margin-left: 11px;
+  width:calc(100% - 71px)
 }
 .accor-wrap .accor-box.on .accor-cont .accor-wrap-in.on .accor-cont-in li .p-info li + li {
   margin-top: 12px;
@@ -2549,6 +2552,33 @@ img.zoom {width:60px;height:60px}
 
 .ban-img {display:block;width:100%;margin:20px 0;box-sizing:border-box}
 .ban-img img {width:100%}
+
+.cont-wrap .bt {margin:30px 0}
+.cont-wrap .bt a {display:block;width:100%;height:54px;border-radius:100px;background:#172E84;text-align:center;color:#fff;font-size:14px;font-weight:700;padding-top:21px;box-sizing:border-box}
+.cont-wrap .bt a.bt2 {background:#4D67DF}
+.verification .cont-wrap .txt-box ul.type2 li {display:flex}
+.verification .cont-wrap .txt-box ul.type2 li span {display:inline-block;min-width:30px}
+.verification .cont-wrap .txt-box ul.type2 li span + span {margin-left:2px}
+.verification-list > li a.disabled {background:#D9D9D9;color:#000;cursor:default;}
+.verification-list > li a .stxt {font-size:10px;margin-top:2px}
+.verification-list > li a span {display:block;}
+.verification .cont-wrap .verification-list > li a {flex-direction:column;}
+.verification .cont-wrap .verification-list.end > li a {color:#717171}
+.verification .cont-wrap .verification-list.end > li a .flag2 {display:block;border-radius:50px;background:#4D67DF;
+box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15) inset;font-size:10px;height:22px;padding:0 8px;color:#fff;padding-top:7px;margin-top:4px}
+.verification .cont-wrap .verification-list.end > li a .flag2.type2 {background:#9B9B9B;box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15) inset;}
+.result-txt {color:#000;font-size:12px;margin:20px 0 10px}
+.result-txt strong {color:#4D67DF;font-weight:700}
+.accor-wrap.result {margin-top:0}
+.accor-wrap.result .accor-box {border-radius:10px;border:1px solid #D9D9D9;background:#FFF;box-shadow:none}
+.accor-wrap.result .accor-box .accor-cont {display:block;}
+.accor-wrap.result .accor-box .accor-cont .img-box {width:60px}
+.accor-wrap.result .accor-box .accor-cont .p-info {width: calc(100% - 76px)}
+.accor-wrap.result .accor-box .accor-cont .p-info li {width:100%}
+.accor-wrap.result .accor-box .accor-cont .p-info li .copy {display:inline-block;width:20px;height:20px;background:url(../../../images/new/user/ico-copy.svg) center center no-repeat}
+.accor-wrap.result .accor-box .accor-cont .p-info li.mail .txt {word-break:break-all;vertical-align:top;width:70%}
+.accor-wrap.result .accor-box .accor-cont {padding:20px}
+
 
 /* 화면틀어지는 부분 대응*/
 @media screen and (max-width: 768px) {
