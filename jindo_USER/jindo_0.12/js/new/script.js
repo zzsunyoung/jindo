@@ -301,10 +301,14 @@
         });
     }
 
-    //일반유저 홈
+    //일반유저 홈 20241111 수정
     if (doc.querySelector(".home-swiper")) {
         menu_arr = ['홈','사업정보','공연행사','취업정보','교육신청']
         var swiper = new Swiper(".home-swiper", {
+            loop: true,
+            autoplay: {
+              delay: 3000
+            },
             spaceBetween:20,
             //centeredSlides: true,
             slidesPerView: 1,
@@ -317,9 +321,9 @@
                 },
             },
             on: {
-                slideChange: function () {
+                transitionEnd: function () {
                     $(window).scrollTop(0);
-                },
+                }
             }
         });
      }
