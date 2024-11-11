@@ -213,30 +213,6 @@
     }
   }
 
-    //일반유저 홈
-    if (doc.querySelector(".tabwrap")) {
-        const tabs = document.querySelectorAll('.tab-link');
-        const tabContents = document.querySelectorAll('.tab-cont');
-        function activateTab(index) {
-            tabs.forEach((tab, i) => {
-                if (i === index) {
-                    tab.classList.add('active');
-                    tabContents[i].classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                    tabContents[i].classList.remove('active');
-                }
-            });
-        }
-        tabs.forEach((tab, index) => {
-            tab.addEventListener('click', function (event) {
-                event.preventDefault();
-                activateTab(index);
-            });
-        });
-        activateTab(0);
-    }
-   
     //일반유저 홈 tab 추가
     if (doc.querySelector(".tabwrap")) {
         const tabs = document.querySelectorAll('.tab-link');
@@ -303,30 +279,26 @@
 
     //일반유저 홈 20241111 수정
     if (doc.querySelector(".home-swiper")) {
-        menu_arr = ['홈','사업정보','공연행사','취업정보','교육신청']
-        var swiper = new Swiper(".home-swiper", {
-            loop: true,
-            autoplay: {
-              delay: 3000
-            },
-            spaceBetween:20,
-            //centeredSlides: true,
-            slidesPerView: 1,
-            autoHeight: true,
-            pagination: {
-                el: ".home-swiper .swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                return '<span class="' + className + '"><span class="text">' + menu_arr[index] + "</span></span>";                
-                },
-            },
-            on: {
-                transitionEnd: function () {
-                    $(window).scrollTop(0);
-                }
-            }
-        });
-     }
+      menu_arr = ['홈','사업정보','공연행사','취업정보','교육신청']
+      var swiper = new Swiper(".home-swiper", {
+          loop: true,
+          spaceBetween:20,
+          slidesPerView: 1,
+          autoHeight: true,
+          pagination: {
+              el: ".home-swiper .swiper-pagination",
+              clickable: true,
+              renderBullet: function (index, className) {
+              return '<span class="' + className + '"><span class="text">' + menu_arr[index] + "</span></span>";                
+              },
+          },
+          on: {
+              transitionEnd: function () {
+                  $(window).scrollTop(0);
+              }
+          }
+      });
+   }
 
     //조직도
     if (doc.querySelector(".accor-box")) {
@@ -515,6 +487,14 @@ if (doc.querySelector(".bottom-event")) {
     });
   }
 
-
-
+  //메인의 날씨 플로팅배너 안내문구 20241111 추가
+  if (doc.querySelector(".floating")) {
+    const tipElement = document.querySelector('.floating .tip');
+    if (!localStorage.getItem('tipShown')) {
+        localStorage.setItem('tipShown', 'true');
+    } else {
+        if (tipElement) tipElement.style.display = 'none';
+    }
+}
+  
 })(window, document, tns);
