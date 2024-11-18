@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>신청 서비스 &gt; 신청 서비스 소개</title>
+    <!-- <link rel="stylesheet" href="../css/main/default.css?v1" /> -->
+    <link rel="stylesheet" href="../css/common/plugins/confirm/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/main/main.js?v5"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.2.0/tinymce.min.js" referrerpolicy="origin" defer></script>
+    <script src="../js/common/plugins/confirm/confirm.min.js"></script>
+    <script src="../js/common/plugins/swiper/swiper.min.js"></script>
+    <script src="../js/main/jquery-barcode-last.min.js"></script>
+    <script src="../js/common/plugins/scroltable/jquery.scroltable.js"></script>
+    <script src="../js/main/qrcode.min.js"></script>
+
+    <script src="https://scert.mobile-ok.com/resources/js/index.js"></script>
+
+    <script src="https://scert.ez-iok.com/stdauth/ds_auth_ptb/asset/js/ptb_ezauth_proc.js"></script>
+
+    <link rel="stylesheet" href="../css/app/new/tiny-slider.css" />
+    <link rel="stylesheet" href="../css/app/new/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+
+    <link rel="stylesheet" href="../css/abc/add.css" />
+    <link rel="stylesheet" href="../css/abc/common.css" />
+    <link rel="stylesheet" href="../css/abc/contents.css" />
+    <link rel="stylesheet" href="../css/abc/default.css" />
+    <link rel="stylesheet" href="../css/abc/header.css" />
+    <link rel="stylesheet" href="../css/abc/main.css" />
+    <link rel="stylesheet" href="../css/abc/sub.css" />
+    <link rel="stylesheet" href="../css/app/new/newui.css" />
+  </head>
+
+  <body>
+    <a name="contentArea" tabindex="-1" class="hide">본문 시작</a>
+    <div class="wrapper">
+      <article id="sub" class="sub">
+        <section class="content-wrap sub-content">
+          <div class="sub-menu">
+            <form method="get" action="/main/totalSearch">
+              <input type="text" id="querySub" name="query" value="" placeholder="무엇이 궁금하신가요?" maxlength="50" title="검색어를 입력하세요." />
+              <button type="submit">검색</button>
+            </form>
+            <h1>신청 서비스</h1>
+
+            <div class="mobile-depth1 mobile snbSwiper" style="max-width: 420px">
+              <button type="button">신청 서비스</button>
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide"><a href="#">소통 플랫폼 소개</a></li>
+
+                <li class="swiper-slide"><a href="#">정보 서비스</a></li>
+
+                <li class="swiper-slide"><a href="#">신청 서비스</a></li>
+
+                <li class="swiper-slide"><a href="#">예약 서비스</a></li>
+
+                <li class="swiper-slide"><a href="#">편의 서비스</a></li>
+
+                <li class="swiper-slide"><a href="#">밀착 서비스</a></li>
+
+                <li class="swiper-slide"><a href="#">알림마당</a></li>
+              </ul>
+            </div>
+
+            <button type="button">신청 서비스 소개</button>
+
+            <ul class="depth-1">
+              <li class="on">
+                <a href="/main/contents/applicationCon"> <span class="nav-label">신청 서비스 소개</span></a>
+              </li>
+
+              <li>
+                <a href="/main/menu/supportBusinessMenu"> <span class="nav-label">지원사업</span></a>
+
+                <ul class="depth-2">
+                  <li>
+                    <a href="/main/helpBusinessIng">신청중인 사업</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/helpBusiness">보조사업 정보</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/builtFind">맞춤 보조사업 찾기</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/helpBusinessState">보조사업 신청현황</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/jindoBusiness">진도 보조사업</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/main/menu/repeatBusinessMenu"> <span class="nav-label">반복사업</span></a>
+
+                <ul class="depth-2">
+                  <li>
+                    <a href="/main/repeatR01">여성 농어업인 행복바우처</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/repeatR02">농어민 공익수당</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/repeatR03">어르신 소농 직불금</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/main/menu/educationIfnoMenu"> <span class="nav-label">교육정보</span></a>
+
+                <ul class="depth-2">
+                  <li>
+                    <a href="/main/jindoEdu01">군민 정보화</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/jindoEdu02">농업 기술센터</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/jindoEdu03">평생 학습관</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/jindoEdu04">청년 센터</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/libEducation">철마 도서관</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/main/menu/purchaseMenu"> <span class="nav-label">구매권/쿠폰</span></a>
+
+                <ul class="depth-2">
+                  <li>
+                    <a href="/main/myPurchase">나의 구매권</a>
+                  </li>
+
+                  <li>
+                    <a href="/main/purchaseState">구매권 사용현황</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="short-cut">
+              <ul>
+                <li><a href="/main/weather">날씨정보</a></li>
+                <li><a href="/main/trafficInfo">교통정보</a></li>
+                <li><a href="/main/tideTime">물때정보</a></li>
+                <li><a href="/main/rePairWork">공사정보</a></li>
+                <li><a href="/main/pharmacyDuty">당번약국</a></li>
+                <li>
+                  <a href="/main/alarmState"> 알림 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-body" id="content-body">
+            <div class="site-depth">
+              <ul>
+                <li>Home</li>
+
+                <li>신청 서비스</li>
+
+                <li>신청 서비스 소개</li>
+              </ul>
+            </div>
+            <div class="content-title">
+              <h1>신청 서비스 소개</h1>
+              <div class="share">
+                <button id="btnCopy" class="btn-copy">URL 복사</button>
+                <button id="btnPrint" class="btn-print" data-site="main">프린트</button>
+                <div>
+                  <button id="btnLink" class="btn-share">SNS 공유</button>
+                  <ul>
+                    <li class="insta"><a href="#">인스타그램</a></li>
+                    <li class="kakaotalk"><a href="#">카카오톡</a></li>
+                    <li class="facebook"><a href="#">페이스북</a></li>
+                    <li class="blog"><a href="#">블로그</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contents styleguide">
+              <div class="intro3">
+                <strong>나에게 맞는 각종 보조금사업을 서류 제출 필요 없이 간편하게 신청할 수 있으며,<br />도서관 등 진도군에서 실시하는 교육을 신청할 수 있습니다.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <footer>
+        <div class="inner">
+          <ul>
+            <li><a href="https://www.jindo.go.kr/home/sub.cs?m=505" target="_blank" title="새창으로 이동">개인정보처리방침</a></li>
+            <li><a href="https://www.jindo.go.kr/home/sub.cs?m=40" target="_blank" title="새창으로 이동">이메일주소무단수집거부</a></li>
+          </ul>
+          <address>
+            58915 전라남도 진도군 진도읍 철마길 25 &nbsp;&nbsp;&nbsp;대표전화 061-544-2181~2 &nbsp;&nbsp;&nbsp;FAX 061-544-0902<br />
+            상호명 : 진도군청 / 대표자명 : 김희수 / 사업자등록번호 : 415-83-02746<br />사업장 주소 : 전라남도 진도군 진도읍 철마길 25 / 유선번호 : 061-544-2181~2
+          </address>
+          <p>COPYRIGHT(C) 2024 JINDO COUNTY. ALL RIGHTS RESERVED</p>
+        </div>
+      </footer>
+
+      <aside class="short-menu mobile">
+        <ul>
+          <li class="on"><a href="/main">홈</a></li>
+          <li><a href="/main/businessInfo">사업정보</a></li>
+          <li><a href="/main/event">공연행사</a></li>
+          <li><a href="/main/jobInfo">취업정보</a></li>
+          <li><a href="/main/jindoEdu01">교육신청</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        (function ($) {
+          //for csrf
+          var token = "452b7e50-2e51-48d5-979a-92b6dd1a636e";
+          var header = "X-XSRF-TOKEN";
+          $.ajaxSetup({
+            beforeSend: function (xhr) {
+              xhr.setRequestHeader("AJAX", true);
+              //for csrf
+              xhr.setRequestHeader(header, token);
+            },
+            error: function (xhr, status, err) {
+              if (xhr.status == 401) {
+                alertMsg("안내", "인증에 실패 했습니다.", "red", "material");
+              } else if (xhr.status == 403) {
+                autoLogoutUser();
+                //toastr.error("세션이 만료가 되었습니다.");
+              }
+            },
+          });
+        })(jQuery);
+      });
+    </script>
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+    <script src="../js/new/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
