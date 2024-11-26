@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>진도</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,minimum-scale=1" />
+    <link rel="stylesheet" href="../css/app/new/style.css" />
+    <link rel="stylesheet" href="../css/app/new/newui.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#"><img src="../images/new/logo.png" alt="진도" /></a>
+        </div>
+        <div class="menu">
+          <ul class="gnb">
+            <li>
+              <a href="#"><i class="icon alarm"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btn-hamburger"><i class="icon icon-hamburger"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- 새로운 지번 등록 -->
+    <ul style="margin: 0 auto; width: 80%">
+      <li><a href="#" class="open-popup" data-target=".popup-style-1">새로운 지번 등록</a></li>
+    </ul>
+
+    <div class="popup-style popup-style-1 pop-new">
+      <div class="popup-overlay">
+        <div class="popup detail">
+          <div class="pophead">새로운 지번 등록</div>
+          <div class="popcont popcont3">
+            <div class="box">전남 진도군 의신면 거룡리 520-7 마을회관</div>
+
+            <div class="dropdown-full">
+              <label class="dropdown-label"><span>*</span>지목</label>
+              <div class="dropdown">
+                <select class="dropdown-select">
+                  <option>집</option>
+                  <option>밭</option>
+                  <option>도로</option>
+                  <option>하천</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button class="cancel-btn close-popup">취소</button>
+            <button class="confirm-btn save-btn close-popup">등록하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/new/tiny-slider.js"></script>
+    <script src="../js/new/script.js"></script>
+    <script src="../js/new/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
